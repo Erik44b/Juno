@@ -230,7 +230,7 @@ if (blockSettings.exists("Bootloader")) {
     console.log("Version {Installed}")
     pause(500)
     console.log(" ")
-    console.log("Installing Bootloader...")
+    console.log("Installing the Bootloader...")
     blockSettings.writeNumber("Bootloader", 21)
     console.log("Bootloader has installed!")
     console.log("The Kernel will now")
