@@ -1,3 +1,16 @@
+function Clear () {
+    blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
+    spriteutils.setConsoleOverlay(false)
+    spriteutils.setConsoleOverlay(true)
+    console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
+    console.log(" ")
+    console.log("COMMANDS")
+    console.log("----------------")
+    console.log(Command_List)
+    console.log("Press [MENU] to Access!")
+    console.log(" ")
+    console.log("Juno > ____")
+}
 function Registry () {
     console.log(" ")
     console.log("Files:")
@@ -69,6 +82,7 @@ function Juno () {
     blockSettings.writeString("Files", "Settings + Commands")
     blockSettings.writeString("Registry", "ver0.27.0")
     blockSettings.writeString("Help", "ver0.27.0")
+    blockSettings.writeString("Clear", "Clear")
     Command_List = [
     "Directory",
     "Version",
@@ -187,6 +201,8 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
             Registry()
         } else if (blockSettings.readString("DirectorySearch") == "Help") {
             Help()
+        } else if (blockSettings.readString("DirectorySearch") == "Clear") {
+            Clear()
         }
     } else {
         spriteutils.setConsoleOverlay(true)
@@ -301,10 +317,10 @@ function Registry_Delete () {
     }
 }
 let RegistryView001BooleanCreate = ""
-let Command_List: string[] = []
 let SystemReinstallVerificationBoolean = false
 let Temporary_File_Data = ""
 let Temporary_File_Name = ""
+let Command_List: string[] = []
 if (blockSettings.exists("Bootloader")) {
     Juno()
 } else {
