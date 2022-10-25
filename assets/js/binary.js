@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.10.36/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.3.1","target":"arcade","targetVersion":"1.10.36","repo":"erik44b/juno-kernel-version-0021"}
-// total=1415765 new=10.56% cached=84.24% other=5.21%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.10.36/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.3.2","target":"arcade","targetVersion":"1.10.36","repo":"erik44b/juno-kernel-version-0021"}
+// total=1419611 new=10.80% cached=84.01% other=5.19%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -445,7 +445,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P254648(s) {
+function _main___P264359(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -980,182 +980,182 @@ switch (step) {
     s.tmp_0 = controller_Button_onEvent__P237478_mk(s);
     s.tmp_0.arg0 = globals.A___237399;
     s.tmp_0.arg1 = 2049;
-    s.tmp_0.arg2 = inline__P242108;
-    s.callLocIdx = 86; s.pc = 39; return s.tmp_0;
+    s.tmp_0.arg2 = inline__P263254;
+    s.callLocIdx = 99; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
     s.tmp_0 = controller_Button_onEvent__P237478_mk(s);
     s.tmp_0.arg0 = globals.menu___237405;
     s.tmp_0.arg1 = 2049;
-    s.tmp_0.arg2 = inline__P242345;
-    s.callLocIdx = 237; s.pc = 40; return s.tmp_0;
+    s.tmp_0.arg2 = inline__P263502;
+    s.callLocIdx = 253; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
     r0 = pxsim_String_.mkEmpty();
-    globals.RegistryView001BooleanCreate___239594 = (r0);
+    globals.RegistryView001BooleanCreate___263672 = (r0);
+    globals.SystemReinstallVerificationBoolean___263348 = (false);
+    r0 = pxsim_String_.mkEmpty();
+    globals.Temporary_File_Data___263310 = (r0);
+    r0 = pxsim_String_.mkEmpty();
+    globals.Temporary_File_Name___263307 = (r0);
     r0 = pxsim_Array__mk();
-    globals.Command_List___239595 = (r0);
-    globals.SystemReinstallVerificationBoolean___239596 = (false);
-    r0 = pxsim_String_.mkEmpty();
-    globals.Temporary_File_Data___239597 = (r0);
-    r0 = pxsim_String_.mkEmpty();
-    globals.Temporary_File_Name___239598 = (r0);
+    globals.Command_List___263213 = (r0);
     s.tmp_1 = blockSettings_exists__P239578_mk(s);
     s.tmp_1.arg0 = "Bootloader";
-    s.callLocIdx = 326; s.pc = 41; return s.tmp_1;
+    s.callLocIdx = 342; s.pc = 41; return s.tmp_1;
   case 41:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_2 = Juno__P239584_mk(s);
-    s.callLocIdx = 327; s.pc = 42; return s.tmp_2;
+    s.tmp_2 = Juno__P263344_mk(s);
+    s.callLocIdx = 343; s.pc = 42; return s.tmp_2;
   case 42:
     r0 = s.retval;
     { step = 2; continue; }
   case 1:
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 328; s.pc = 43; return s.tmp_0;
+    s.callLocIdx = 344; s.pc = 43; return s.tmp_0;
   case 43:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno Kernel Installation";
-    s.callLocIdx = 329; s.pc = 44; return s.tmp_0;
+    s.callLocIdx = 345; s.pc = 44; return s.tmp_0;
   case 44:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 100;
-    s.callLocIdx = 330; s.pc = 45; return s.tmp_0;
+    s.callLocIdx = 346; s.pc = 45; return s.tmp_0;
   case 45:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Installing Necessary Settings...";
-    s.callLocIdx = 331; s.pc = 46; return s.tmp_0;
+    s.callLocIdx = 347; s.pc = 46; return s.tmp_0;
   case 46:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 332; s.pc = 47; return s.tmp_0;
+    s.callLocIdx = 348; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "NOTE: Some Settings Might be installed that aren't listed below. Once setup finishes please use the  'Files' Command to view  all settings.";
-    s.callLocIdx = 333; s.pc = 48; return s.tmp_0;
+    s.callLocIdx = 349; s.pc = 48; return s.tmp_0;
   case 48:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 334; s.pc = 49; return s.tmp_0;
+    s.callLocIdx = 350; s.pc = 49; return s.tmp_0;
   case 49:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 335; s.pc = 50; return s.tmp_0;
+    s.callLocIdx = 351; s.pc = 50; return s.tmp_0;
   case 50:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "Registry";
     s.tmp_0.arg1 = "ver0.27.0";
-    s.callLocIdx = 336; s.pc = 51; return s.tmp_0;
+    s.callLocIdx = 352; s.pc = 51; return s.tmp_0;
   case 51:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Registry {Installed}";
-    s.callLocIdx = 337; s.pc = 52; return s.tmp_0;
+    s.callLocIdx = 353; s.pc = 52; return s.tmp_0;
   case 52:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 338; s.pc = 53; return s.tmp_0;
+    s.callLocIdx = 354; s.pc = 53; return s.tmp_0;
   case 53:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "Files";
     s.tmp_0.arg1 = "Settings + Commands";
-    s.callLocIdx = 339; s.pc = 54; return s.tmp_0;
+    s.callLocIdx = 355; s.pc = 54; return s.tmp_0;
   case 54:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Files {Installed}";
-    s.callLocIdx = 340; s.pc = 55; return s.tmp_0;
+    s.callLocIdx = 356; s.pc = 55; return s.tmp_0;
   case 55:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 341; s.pc = 56; return s.tmp_0;
+    s.callLocIdx = 357; s.pc = 56; return s.tmp_0;
   case 56:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "Directory";
     s.tmp_0.arg1 = "Directory";
-    s.callLocIdx = 342; s.pc = 57; return s.tmp_0;
+    s.callLocIdx = 358; s.pc = 57; return s.tmp_0;
   case 57:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Directory {Installed}";
-    s.callLocIdx = 343; s.pc = 58; return s.tmp_0;
+    s.callLocIdx = 359; s.pc = 58; return s.tmp_0;
   case 58:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 344; s.pc = 59; return s.tmp_0;
+    s.callLocIdx = 360; s.pc = 59; return s.tmp_0;
   case 59:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeNumber__P239571_mk(s);
     s.tmp_0.arg0 = "Version";
     s.tmp_0.arg1 = 27;
-    s.callLocIdx = 345; s.pc = 60; return s.tmp_0;
+    s.callLocIdx = 361; s.pc = 60; return s.tmp_0;
   case 60:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Version {Installed}";
-    s.callLocIdx = 346; s.pc = 61; return s.tmp_0;
+    s.callLocIdx = 362; s.pc = 61; return s.tmp_0;
   case 61:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 347; s.pc = 62; return s.tmp_0;
+    s.callLocIdx = 363; s.pc = 62; return s.tmp_0;
   case 62:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 348; s.pc = 63; return s.tmp_0;
+    s.callLocIdx = 364; s.pc = 63; return s.tmp_0;
   case 63:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Installing Bootloader...";
-    s.callLocIdx = 349; s.pc = 64; return s.tmp_0;
+    s.callLocIdx = 365; s.pc = 64; return s.tmp_0;
   case 64:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeNumber__P239571_mk(s);
     s.tmp_0.arg0 = "Bootloader";
     s.tmp_0.arg1 = 27;
-    s.callLocIdx = 350; s.pc = 65; return s.tmp_0;
+    s.callLocIdx = 366; s.pc = 65; return s.tmp_0;
   case 65:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Bootloader has installed!";
-    s.callLocIdx = 351; s.pc = 66; return s.tmp_0;
+    s.callLocIdx = 367; s.pc = 66; return s.tmp_0;
   case 66:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "The Kernel will now";
-    s.callLocIdx = 352; s.pc = 67; return s.tmp_0;
+    s.callLocIdx = 368; s.pc = 67; return s.tmp_0;
   case 67:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "restart...";
-    s.callLocIdx = 353; s.pc = 68; return s.tmp_0;
+    s.callLocIdx = 369; s.pc = 68; return s.tmp_0;
   case 68:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 354; s.pc = 69; return s.tmp_0;
+    s.callLocIdx = 370; s.pc = 69; return s.tmp_0;
   case 69:
     r0 = s.retval;
     s.tmp_0 = game_reset__P238715_mk(s);
-    s.callLocIdx = 355; s.pc = 70; return s.tmp_0;
+    s.callLocIdx = 371; s.pc = 70; return s.tmp_0;
   case 70:
     r0 = s.retval;
   case 2:
@@ -1163,13 +1163,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P254648.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/settings-blocks/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P254648.continuations = [  ]
+_main___P264359.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/settings-blocks/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P264359.continuations = [  ]
 
-function _main___P254648_mk(s) {
+function _main___P264359_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P254648, depth: s.depth + 1,
+        parent: s, fn: _main___P264359, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1459,7 +1459,7 @@ function info_inline__P239953_mk(s) {
 
 
 
-function inline__P242108(s) {
+function inline__P263254(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1471,7 +1471,7 @@ switch (step) {
 
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "MostRecentFile";
-    s.callLocIdx = 74; s.pc = 13; return s.tmp_2;
+    s.callLocIdx = 87; s.pc = 13; return s.tmp_2;
   case 13:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1479,15 +1479,15 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_3 = Directory__P239589_mk(s);
-    s.callLocIdx = 75; s.pc = 14; return s.tmp_3;
+    s.tmp_3 = Directory__P263260_mk(s);
+    s.callLocIdx = 88; s.pc = 14; return s.tmp_3;
   case 14:
     r0 = s.retval;
     { step = 12; continue; }
   case 1:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "MostRecentFile";
-    s.callLocIdx = 76; s.pc = 15; return s.tmp_2;
+    s.callLocIdx = 89; s.pc = 15; return s.tmp_2;
   case 15:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1495,15 +1495,15 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    s.tmp_3 = Version__P239588_mk(s);
-    s.callLocIdx = 77; s.pc = 16; return s.tmp_3;
+    s.tmp_3 = Version__P263266_mk(s);
+    s.callLocIdx = 90; s.pc = 16; return s.tmp_3;
   case 16:
     r0 = s.retval;
     { step = 11; continue; }
   case 2:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "MostRecentFile";
-    s.callLocIdx = 78; s.pc = 17; return s.tmp_2;
+    s.callLocIdx = 91; s.pc = 17; return s.tmp_2;
   case 17:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1511,15 +1511,15 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_3 = VersionLog__P239592_mk(s);
-    s.callLocIdx = 79; s.pc = 18; return s.tmp_3;
+    s.tmp_3 = VersionLog__P263272_mk(s);
+    s.callLocIdx = 92; s.pc = 18; return s.tmp_3;
   case 18:
     r0 = s.retval;
     { step = 10; continue; }
   case 3:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "MostRecentFile";
-    s.callLocIdx = 80; s.pc = 19; return s.tmp_2;
+    s.callLocIdx = 93; s.pc = 19; return s.tmp_2;
   case 19:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1527,15 +1527,15 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 4; continue; }
-    s.tmp_3 = Files__P239590_mk(s);
-    s.callLocIdx = 81; s.pc = 20; return s.tmp_3;
+    s.tmp_3 = Files__P263278_mk(s);
+    s.callLocIdx = 94; s.pc = 20; return s.tmp_3;
   case 20:
     r0 = s.retval;
     { step = 9; continue; }
   case 4:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "MostRecentFile";
-    s.callLocIdx = 82; s.pc = 21; return s.tmp_2;
+    s.callLocIdx = 95; s.pc = 21; return s.tmp_2;
   case 21:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1543,15 +1543,15 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 5; continue; }
-    s.tmp_3 = Registry__P239581_mk(s);
-    s.callLocIdx = 83; s.pc = 22; return s.tmp_3;
+    s.tmp_3 = Registry__P263217_mk(s);
+    s.callLocIdx = 96; s.pc = 22; return s.tmp_3;
   case 22:
     r0 = s.retval;
     { step = 8; continue; }
   case 5:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "MostRecentFile";
-    s.callLocIdx = 84; s.pc = 23; return s.tmp_2;
+    s.callLocIdx = 97; s.pc = 23; return s.tmp_2;
   case 23:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -1559,8 +1559,8 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 6; continue; }
-    s.tmp_3 = Help__P239587_mk(s);
-    s.callLocIdx = 85; s.pc = 24; return s.tmp_3;
+    s.tmp_3 = Help__P263289_mk(s);
+    s.callLocIdx = 98; s.pc = 24; return s.tmp_3;
   case 24:
     r0 = s.retval;
   case 6:
@@ -1574,12 +1574,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P242108.info = {"start":808,"length":568,"line":21,"column":52,"endLine":35,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P263254.info = {"start":1292,"length":568,"line":34,"column":52,"endLine":48,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P242108_mk(s) {
+function inline__P263254_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P242108, depth: s.depth + 1,
+        parent: s, fn: inline__P263254, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1591,7 +1591,7 @@ function inline__P242108_mk(s) {
 
 
 
-function inline__P242345(s) {
+function inline__P263502(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1603,309 +1603,326 @@ switch (step) {
 
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = false;
-    s.callLocIdx = 201; s.pc = 15; return s.tmp_0;
-  case 15:
+    s.callLocIdx = 215; s.pc = 17; return s.tmp_0;
+  case 17:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "DirectorySearch";
     s.tmp_1 = game_askForString__P238224_mk(s);
     s.tmp_1.arg0 = "Insert Command";
     s.tmp_1.arg1 = 12;
-    s.callLocIdx = 202; s.pc = 17; return s.tmp_1;
-  case 17:
+    s.callLocIdx = 216; s.pc = 19; return s.tmp_1;
+  case 19:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 203; s.pc = 16; return s.tmp_0;
-  case 16:
+    s.callLocIdx = 217; s.pc = 18; return s.tmp_0;
+  case 18:
     r0 = s.retval;
     s.tmp_1 = blockSettings_exists__P239578_mk(s);
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 204; s.pc = 19; return s.tmp_2;
-  case 19:
+    s.callLocIdx = 218; s.pc = 21; return s.tmp_2;
+  case 21:
     r0 = s.retval;
     s.tmp_1.arg0 = r0;
-    s.callLocIdx = 205; s.pc = 18; return s.tmp_1;
-  case 18:
+    s.callLocIdx = 219; s.pc = 20; return s.tmp_1;
+  case 20:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 13; continue; }
+    if (!r0) { step = 15; continue; }
     s.tmp_3 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_3.arg0 = true;
-    s.callLocIdx = 206; s.pc = 20; return s.tmp_3;
-  case 20:
+    s.callLocIdx = 220; s.pc = 22; return s.tmp_3;
+  case 22:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 207; s.pc = 22; return s.tmp_3;
-  case 22:
+    s.callLocIdx = 221; s.pc = 24; return s.tmp_3;
+  case 24:
     r0 = s.retval;
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 23);
+    setupResume(s, 25);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 23:
+  case 25:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 208; s.pc = 21; return s.tmp_0;
-  case 21:
+    s.callLocIdx = 222; s.pc = 23; return s.tmp_0;
+  case 23:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 209; s.pc = 24; return s.tmp_0;
-  case 24:
+    s.callLocIdx = 223; s.pc = 26; return s.tmp_0;
+  case 26:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_5 = blockSettings_readString__P239574_mk(s);
     s.tmp_5.arg0 = "DirectorySearch";
-    s.callLocIdx = 210; s.pc = 26; return s.tmp_5;
-  case 26:
+    s.callLocIdx = 224; s.pc = 28; return s.tmp_5;
+  case 28:
     r0 = s.retval;
     s.tmp_4 = r0;
     if ((s.tmp_4) && (s.tmp_4).vtable) {
-    setupResume(s, 27);
+    setupResume(s, 29);
     pxsim_String__stringConv(s.tmp_4);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_4) + ""; }
-  case 27:
+  case 29:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat("\"", s.tmp_3);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 28);
+    setupResume(s, 30);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 28:
+  case 30:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_1, "\"");
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 211; s.pc = 25; return s.tmp_0;
-  case 25:
+    s.callLocIdx = 225; s.pc = 27; return s.tmp_0;
+  case 27:
     r0 = s.retval;
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 212; s.pc = 29; return s.tmp_2;
-  case 29:
+    s.callLocIdx = 226; s.pc = 31; return s.tmp_2;
+  case 31:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == "Directory");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_3 = Directory__P239589_mk(s);
-    s.callLocIdx = 213; s.pc = 30; return s.tmp_3;
-  case 30:
+    s.tmp_3 = Directory__P263260_mk(s);
+    s.callLocIdx = 227; s.pc = 32; return s.tmp_3;
+  case 32:
     r0 = s.retval;
-    { step = 12; continue; }
+    { step = 14; continue; }
   case 1:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 214; s.pc = 31; return s.tmp_2;
-  case 31:
+    s.callLocIdx = 228; s.pc = 33; return s.tmp_2;
+  case 33:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == "Version");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    s.tmp_3 = Version__P239588_mk(s);
-    s.callLocIdx = 215; s.pc = 32; return s.tmp_3;
-  case 32:
+    s.tmp_3 = Version__P263266_mk(s);
+    s.callLocIdx = 229; s.pc = 34; return s.tmp_3;
+  case 34:
     r0 = s.retval;
-    { step = 11; continue; }
+    { step = 13; continue; }
   case 2:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 216; s.pc = 33; return s.tmp_2;
-  case 33:
+    s.callLocIdx = 230; s.pc = 35; return s.tmp_2;
+  case 35:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == "VersionLog");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_3 = VersionLog__P239592_mk(s);
-    s.callLocIdx = 217; s.pc = 34; return s.tmp_3;
-  case 34:
+    s.tmp_3 = VersionLog__P263272_mk(s);
+    s.callLocIdx = 231; s.pc = 36; return s.tmp_3;
+  case 36:
     r0 = s.retval;
-    { step = 10; continue; }
+    { step = 12; continue; }
   case 3:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 218; s.pc = 35; return s.tmp_2;
-  case 35:
+    s.callLocIdx = 232; s.pc = 37; return s.tmp_2;
+  case 37:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == "Files");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 4; continue; }
-    s.tmp_3 = Files__P239590_mk(s);
-    s.callLocIdx = 219; s.pc = 36; return s.tmp_3;
-  case 36:
+    s.tmp_3 = Files__P263278_mk(s);
+    s.callLocIdx = 233; s.pc = 38; return s.tmp_3;
+  case 38:
     r0 = s.retval;
-    { step = 9; continue; }
+    { step = 11; continue; }
   case 4:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 220; s.pc = 37; return s.tmp_2;
-  case 37:
+    s.callLocIdx = 234; s.pc = 39; return s.tmp_2;
+  case 39:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == "Registry");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 5; continue; }
-    s.tmp_3 = Registry__P239581_mk(s);
-    s.callLocIdx = 221; s.pc = 38; return s.tmp_3;
-  case 38:
+    s.tmp_3 = Registry__P263217_mk(s);
+    s.callLocIdx = 235; s.pc = 40; return s.tmp_3;
+  case 40:
     r0 = s.retval;
-    { step = 8; continue; }
+    { step = 10; continue; }
   case 5:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 222; s.pc = 39; return s.tmp_2;
-  case 39:
+    s.callLocIdx = 236; s.pc = 41; return s.tmp_2;
+  case 41:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 == "Help");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 6; continue; }
-    s.tmp_3 = Help__P239587_mk(s);
-    s.callLocIdx = 223; s.pc = 40; return s.tmp_3;
-  case 40:
+    s.tmp_3 = Help__P263289_mk(s);
+    s.callLocIdx = 237; s.pc = 42; return s.tmp_3;
+  case 42:
     r0 = s.retval;
+    { step = 9; continue; }
   case 6:
+    s.tmp_2 = blockSettings_readString__P239574_mk(s);
+    s.tmp_2.arg0 = "DirectorySearch";
+    s.callLocIdx = 238; s.pc = 43; return s.tmp_2;
+  case 43:
+    r0 = s.retval;
+    s.tmp_1 = r0;
+    r0 = (s.tmp_1 == "Clear");
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 7; continue; }
+    s.tmp_3 = Clear__P263196_mk(s);
+    s.callLocIdx = 239; s.pc = 44; return s.tmp_3;
+  case 44:
+    r0 = s.retval;
   case 7:
   case 8:
   case 9:
   case 10:
   case 11:
   case 12:
-    { step = 14; continue; }
   case 13:
+  case 14:
+    { step = 16; continue; }
+  case 15:
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 224; s.pc = 41; return s.tmp_0;
-  case 41:
+    s.callLocIdx = 240; s.pc = 45; return s.tmp_0;
+  case 45:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 225; s.pc = 43; return s.tmp_3;
-  case 43:
+    s.callLocIdx = 241; s.pc = 47; return s.tmp_3;
+  case 47:
     r0 = s.retval;
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 44);
+    setupResume(s, 48);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 44:
+  case 48:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 226; s.pc = 42; return s.tmp_0;
-  case 42:
+    s.callLocIdx = 242; s.pc = 46; return s.tmp_0;
+  case 46:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 227; s.pc = 45; return s.tmp_0;
-  case 45:
+    s.callLocIdx = 243; s.pc = 49; return s.tmp_0;
+  case 49:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Error 001 - No Settings";
-    s.callLocIdx = 228; s.pc = 46; return s.tmp_0;
-  case 46:
+    s.callLocIdx = 244; s.pc = 50; return s.tmp_0;
+  case 50:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_5 = blockSettings_readString__P239574_mk(s);
     s.tmp_5.arg0 = "DirectorySearch";
-    s.callLocIdx = 229; s.pc = 48; return s.tmp_5;
-  case 48:
+    s.callLocIdx = 245; s.pc = 52; return s.tmp_5;
+  case 52:
     r0 = s.retval;
     s.tmp_4 = r0;
     if ((s.tmp_4) && (s.tmp_4).vtable) {
-    setupResume(s, 49);
+    setupResume(s, 53);
     pxsim_String__stringConv(s.tmp_4);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_4) + ""; }
-  case 49:
+  case 53:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_String__concat("found with name \"", s.tmp_3);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 50);
+    setupResume(s, 54);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 50:
+  case 54:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_1, "\"");
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 230; s.pc = 47; return s.tmp_0;
-  case 47:
+    s.callLocIdx = 246; s.pc = 51; return s.tmp_0;
+  case 51:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 100;
-    s.callLocIdx = 231; s.pc = 51; return s.tmp_0;
-  case 51:
-    r0 = s.retval;
-    s.tmp_0 = console_log__P235838_mk(s);
-    s.tmp_0.arg0 = " ";
-    s.callLocIdx = 232; s.pc = 52; return s.tmp_0;
-  case 52:
-    r0 = s.retval;
-    s.tmp_0 = console_log__P235838_mk(s);
-    s.tmp_0.arg0 = "Available Commands:";
-    s.callLocIdx = 233; s.pc = 53; return s.tmp_0;
-  case 53:
-    r0 = s.retval;
-    s.tmp_0 = console_log__P235838_mk(s);
-    s.tmp_0.arg0 = globals.Command_List___239595;
-    s.callLocIdx = 234; s.pc = 54; return s.tmp_0;
-  case 54:
-    r0 = s.retval;
-    s.tmp_0 = console_log__P235838_mk(s);
-    s.tmp_0.arg0 = " ";
-    s.callLocIdx = 235; s.pc = 55; return s.tmp_0;
+    s.callLocIdx = 247; s.pc = 55; return s.tmp_0;
   case 55:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
-    s.tmp_0.arg0 = "Juno > ____";
-    s.callLocIdx = 236; s.pc = 56; return s.tmp_0;
+    s.tmp_0.arg0 = " ";
+    s.callLocIdx = 248; s.pc = 56; return s.tmp_0;
   case 56:
     r0 = s.retval;
-  case 14:
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = "Available Commands:";
+    s.callLocIdx = 249; s.pc = 57; return s.tmp_0;
+  case 57:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = globals.Command_List___263213;
+    s.callLocIdx = 250; s.pc = 58; return s.tmp_0;
+  case 58:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = " ";
+    s.callLocIdx = 251; s.pc = 59; return s.tmp_0;
+  case 59:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = "Juno > ____";
+    s.callLocIdx = 252; s.pc = 60; return s.tmp_0;
+  case 60:
+    r0 = s.retval;
+  case 16:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P242345.info = {"start":6039,"length":1553,"line":169,"column":55,"endLine":203,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P263502.info = {"start":6571,"length":1650,"line":183,"column":55,"endLine":219,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P242345_mk(s) {
+function inline__P263502_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P242345, depth: s.depth + 1,
+        parent: s, fn: inline__P263502, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2561,7 +2578,7 @@ function Buffer_sizeOfNumberFormat__P235673_mk(s) {
 
 
 
-function Juno__P239584(s) {
+function Juno__P263344(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2574,45 +2591,51 @@ switch (step) {
     s.tmp_0 = blockSettings_writeNumber__P239571_mk(s);
     s.tmp_0.arg0 = "Version";
     s.tmp_0.arg1 = 27;
-    s.callLocIdx = 112; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 125; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "VersionLog";
     s.tmp_0.arg1 = "Version 0027";
-    s.callLocIdx = 113; s.pc = 2; return s.tmp_0;
+    s.callLocIdx = 126; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
-    globals.SystemReinstallVerificationBoolean___239596 = (false);
+    globals.SystemReinstallVerificationBoolean___263348 = (false);
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "Directory";
     s.tmp_0.arg1 = "Directory";
-    s.callLocIdx = 114; s.pc = 3; return s.tmp_0;
+    s.callLocIdx = 127; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "Directory.Search";
     s.tmp_0.arg1 = "DirectorySearch";
-    s.callLocIdx = 115; s.pc = 4; return s.tmp_0;
+    s.callLocIdx = 128; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "Files";
     s.tmp_0.arg1 = "Settings + Commands";
-    s.callLocIdx = 116; s.pc = 5; return s.tmp_0;
+    s.callLocIdx = 129; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "Registry";
     s.tmp_0.arg1 = "ver0.27.0";
-    s.callLocIdx = 117; s.pc = 6; return s.tmp_0;
+    s.callLocIdx = 130; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "Help";
     s.tmp_0.arg1 = "ver0.27.0";
-    s.callLocIdx = 118; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 131; s.pc = 7; return s.tmp_0;
   case 7:
+    r0 = s.retval;
+    s.tmp_0 = blockSettings_writeString__P239573_mk(s);
+    s.tmp_0.arg0 = "Clear";
+    s.tmp_0.arg1 = "Clear";
+    s.callLocIdx = 132; s.pc = 8; return s.tmp_0;
+  case 8:
     r0 = s.retval;
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
@@ -2622,21 +2645,21 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, "Files");
     r0 = pxsim_Array__push(s.tmp_0, "Registry");
     r0 = pxsim_Array__push(s.tmp_0, "Help");
-    globals.Command_List___239595 = (s.tmp_0);
-    s.tmp_0 = Juno_Terminal__P239586_mk(s);
-    s.callLocIdx = 119; s.pc = 8; return s.tmp_0;
-  case 8:
+    globals.Command_List___263213 = (s.tmp_0);
+    s.tmp_0 = Juno_Terminal__P263359_mk(s);
+    s.callLocIdx = 133; s.pc = 9; return s.tmp_0;
+  case 9:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Juno__P239584.info = {"start":2286,"length":602,"line":62,"column":0,"endLine":80,"endColumn":1,"fileName":"main.ts","functionName":"Juno","argumentNames":[]}
+Juno__P263344.info = {"start":2770,"length":650,"line":75,"column":0,"endLine":94,"endColumn":1,"fileName":"main.ts","functionName":"Juno","argumentNames":[]}
 
-function Juno__P239584_mk(s) {
+function Juno__P263344_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Juno__P239584, depth: s.depth + 1,
+        parent: s, fn: Juno__P263344, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -2645,7 +2668,7 @@ function Juno__P239584_mk(s) {
 
 
 
-function Juno_Terminal__P239586(s) {
+function Juno_Terminal__P263359(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2655,21 +2678,21 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.index___242298 = undefined;
+    s.index___263455 = undefined;
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 131; s.pc = 9; return s.tmp_0;
+    s.callLocIdx = 145; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 100;
-    s.callLocIdx = 132; s.pc = 10; return s.tmp_0;
+    s.callLocIdx = 146; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 133; s.pc = 12; return s.tmp_3;
+    s.callLocIdx = 147; s.pc = 12; return s.tmp_3;
   case 12:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -2684,17 +2707,17 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 134; s.pc = 11; return s.tmp_0;
+    s.callLocIdx = 148; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 135; s.pc = 14; return s.tmp_0;
+    s.callLocIdx = 149; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_8 = blockSettings_list__P239579_mk(s);
-    s.callLocIdx = 136; s.pc = 16; return s.tmp_8;
+    s.callLocIdx = 150; s.pc = 16; return s.tmp_8;
   case 16:
     r0 = s.retval;
     s.tmp_7 = r0;
@@ -2733,7 +2756,7 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String_.mkEmpty();
     s.tmp_13 = r0;
-    r0 = pxsim_Array__length(globals.Command_List___239595);
+    r0 = pxsim_Array__length(globals.Command_List___263213);
     s.tmp_15 = r0;
     if ((s.tmp_15) && (s.tmp_15).vtable) {
     setupResume(s, 20);
@@ -2768,21 +2791,21 @@ switch (step) {
     s.tmp_9 = r0;
     r0 = pxsim_String__concat(s.tmp_1, s.tmp_9);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 137; s.pc = 15; return s.tmp_0;
+    s.callLocIdx = 151; s.pc = 15; return s.tmp_0;
   case 15:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     r0 = pxsim_String_.mkEmpty();
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 138; s.pc = 23; return s.tmp_0;
+    s.callLocIdx = 152; s.pc = 23; return s.tmp_0;
   case 23:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 139; s.pc = 24; return s.tmp_0;
+    s.callLocIdx = 153; s.pc = 24; return s.tmp_0;
   case 24:
     r0 = s.retval;
-    r0 = pxsim_Array__length(globals.Command_List___239595);
+    r0 = pxsim_Array__length(globals.Command_List___263213);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 > 0);
     s.tmp_0 = r0;
@@ -2790,17 +2813,17 @@ switch (step) {
     if (!r0) { step = 3; continue; }
     s.tmp_2 = pause__P235871_mk(s);
     s.tmp_2.arg0 = 500;
-    s.callLocIdx = 140; s.pc = 25; return s.tmp_2;
+    s.callLocIdx = 154; s.pc = 25; return s.tmp_2;
   case 25:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 141; s.pc = 26; return s.tmp_0;
+    s.callLocIdx = 155; s.pc = 26; return s.tmp_0;
   case 26:
     r0 = s.retval;
     s.tmp_1 = blockSettings_exists__P239578_mk(s);
     s.tmp_1.arg0 = "MostRecentFile";
-    s.callLocIdx = 142; s.pc = 27; return s.tmp_1;
+    s.callLocIdx = 156; s.pc = 27; return s.tmp_1;
   case 27:
     r0 = s.retval;
     s.tmp_0 = r0;
@@ -2808,117 +2831,117 @@ switch (step) {
     if (!r0) { step = 1; continue; }
     s.tmp_2 = console_log__P235838_mk(s);
     s.tmp_2.arg0 = "SHORTCUTS";
-    s.callLocIdx = 143; s.pc = 28; return s.tmp_2;
+    s.callLocIdx = 157; s.pc = 28; return s.tmp_2;
   case 28:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "----------------";
-    s.callLocIdx = 144; s.pc = 29; return s.tmp_0;
+    s.callLocIdx = 158; s.pc = 29; return s.tmp_0;
   case 29:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "MostRecentFile";
-    s.callLocIdx = 145; s.pc = 31; return s.tmp_1;
+    s.callLocIdx = 159; s.pc = 31; return s.tmp_1;
   case 31:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 146; s.pc = 30; return s.tmp_0;
+    s.callLocIdx = 160; s.pc = 30; return s.tmp_0;
   case 30:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Press [A] to Access!";
-    s.callLocIdx = 147; s.pc = 32; return s.tmp_0;
+    s.callLocIdx = 161; s.pc = 32; return s.tmp_0;
   case 32:
     r0 = s.retval;
   case 1:
   case 2:
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 148; s.pc = 33; return s.tmp_0;
+    s.callLocIdx = 162; s.pc = 33; return s.tmp_0;
   case 33:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "COMMANDS";
-    s.callLocIdx = 149; s.pc = 34; return s.tmp_0;
+    s.callLocIdx = 163; s.pc = 34; return s.tmp_0;
   case 34:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "----------------";
-    s.callLocIdx = 150; s.pc = 35; return s.tmp_0;
+    s.callLocIdx = 164; s.pc = 35; return s.tmp_0;
   case 35:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
-    s.tmp_0.arg0 = globals.Command_List___239595;
-    s.callLocIdx = 151; s.pc = 36; return s.tmp_0;
+    s.tmp_0.arg0 = globals.Command_List___263213;
+    s.callLocIdx = 165; s.pc = 36; return s.tmp_0;
   case 36:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Press [MENU] to Access!";
-    s.callLocIdx = 152; s.pc = 37; return s.tmp_0;
+    s.callLocIdx = 166; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
     { step = 8; continue; }
   case 3:
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 153; s.pc = 38; return s.tmp_0;
+    s.callLocIdx = 167; s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Error 000 - No Commands";
-    s.callLocIdx = 154; s.pc = 39; return s.tmp_0;
+    s.callLocIdx = 168; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Listed in Directory.";
-    s.callLocIdx = 155; s.pc = 40; return s.tmp_0;
+    s.callLocIdx = 169; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 156; s.pc = 41; return s.tmp_0;
+    s.callLocIdx = 170; s.pc = 41; return s.tmp_0;
   case 41:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 157; s.pc = 42; return s.tmp_0;
+    s.callLocIdx = 171; s.pc = 42; return s.tmp_0;
   case 42:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Please Reinstall the Juno";
-    s.callLocIdx = 158; s.pc = 43; return s.tmp_0;
+    s.callLocIdx = 172; s.pc = 43; return s.tmp_0;
   case 43:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Kernel or Upgrade to a ";
-    s.callLocIdx = 159; s.pc = 44; return s.tmp_0;
+    s.callLocIdx = 173; s.pc = 44; return s.tmp_0;
   case 44:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "newer version.";
-    s.callLocIdx = 160; s.pc = 45; return s.tmp_0;
+    s.callLocIdx = 174; s.pc = 45; return s.tmp_0;
   case 45:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 161; s.pc = 46; return s.tmp_0;
+    s.callLocIdx = 175; s.pc = 46; return s.tmp_0;
   case 46:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 162; s.pc = 47; return s.tmp_0;
+    s.callLocIdx = 176; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Current Version:";
-    s.callLocIdx = 163; s.pc = 48; return s.tmp_0;
+    s.callLocIdx = 177; s.pc = 48; return s.tmp_0;
   case 48:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 164; s.pc = 50; return s.tmp_3;
+    s.callLocIdx = 178; s.pc = 50; return s.tmp_3;
   case 50:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -2933,17 +2956,17 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 165; s.pc = 49; return s.tmp_0;
+    s.callLocIdx = 179; s.pc = 49; return s.tmp_0;
   case 49:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 166; s.pc = 52; return s.tmp_0;
+    s.callLocIdx = 180; s.pc = 52; return s.tmp_0;
   case 52:
     r0 = s.retval;
     s.tmp_2 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_2.arg0 = "Version";
-    s.callLocIdx = 167; s.pc = 53; return s.tmp_2;
+    s.callLocIdx = 181; s.pc = 53; return s.tmp_2;
   case 53:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -2953,17 +2976,17 @@ switch (step) {
     if (!r0) { step = 6; continue; }
     s.tmp_3 = console_log__P235838_mk(s);
     s.tmp_3.arg0 = " ";
-    s.callLocIdx = 168; s.pc = 54; return s.tmp_3;
+    s.callLocIdx = 182; s.pc = 54; return s.tmp_3;
   case 54:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Looking for new Versions";
-    s.callLocIdx = 169; s.pc = 55; return s.tmp_0;
+    s.callLocIdx = 183; s.pc = 55; return s.tmp_0;
   case 55:
     r0 = s.retval;
-    s.index___242298 = (0);
+    s.index___263455 = (0);
   case 4:
-    s.tmp_1 = r0 = s.index___242298;
+    s.tmp_1 = r0 = s.index___263455;
     r0 = pxsim.Math_.randomRange(4, 10);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 < s.tmp_2);
@@ -2972,44 +2995,44 @@ switch (step) {
     if (!r0) { step = 5; continue; }
     s.tmp_3 = console_log__P235838_mk(s);
     s.tmp_3.arg0 = ".";
-    s.callLocIdx = 170; s.pc = 56; return s.tmp_3;
+    s.callLocIdx = 184; s.pc = 56; return s.tmp_3;
   case 56:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 171; s.pc = 57; return s.tmp_0;
+    s.callLocIdx = 185; s.pc = 57; return s.tmp_0;
   case 57:
     r0 = s.retval;
-    r0 = (s.index___242298 + 1);
-    s.index___242298 = (r0);
+    r0 = (s.index___263455 + 1);
+    s.index___263455 = (r0);
     { step = 4; continue; }
   case 5:
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "No Newer Versions Found.";
-    s.callLocIdx = 172; s.pc = 58; return s.tmp_0;
+    s.callLocIdx = 186; s.pc = 58; return s.tmp_0;
   case 58:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Reinstalling the Juno ";
-    s.callLocIdx = 173; s.pc = 59; return s.tmp_0;
+    s.callLocIdx = 187; s.pc = 59; return s.tmp_0;
   case 59:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Kernel...";
-    s.callLocIdx = 174; s.pc = 60; return s.tmp_0;
+    s.callLocIdx = 188; s.pc = 60; return s.tmp_0;
   case 60:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 1000;
-    s.callLocIdx = 175; s.pc = 61; return s.tmp_0;
+    s.callLocIdx = 189; s.pc = 61; return s.tmp_0;
   case 61:
     r0 = s.retval;
     s.tmp_0 = blockSettings_clear__P239580_mk(s);
-    s.callLocIdx = 176; s.pc = 62; return s.tmp_0;
+    s.callLocIdx = 190; s.pc = 62; return s.tmp_0;
   case 62:
     r0 = s.retval;
     s.tmp_0 = game_reset__P238715_mk(s);
-    s.callLocIdx = 177; s.pc = 63; return s.tmp_0;
+    s.callLocIdx = 191; s.pc = 63; return s.tmp_0;
   case 63:
     r0 = s.retval;
   case 6:
@@ -3017,24 +3040,24 @@ switch (step) {
   case 8:
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 178; s.pc = 64; return s.tmp_0;
+    s.callLocIdx = 192; s.pc = 64; return s.tmp_0;
   case 64:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > ____";
-    s.callLocIdx = 179; s.pc = 65; return s.tmp_0;
+    s.callLocIdx = 193; s.pc = 65; return s.tmp_0;
   case 65:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Juno_Terminal__P239586.info = {"start":3250,"length":1912,"line":93,"column":0,"endLine":146,"endColumn":1,"fileName":"main.ts","functionName":"Juno_Terminal","argumentNames":[]}
+Juno_Terminal__P263359.info = {"start":3782,"length":1912,"line":107,"column":0,"endLine":160,"endColumn":1,"fileName":"main.ts","functionName":"Juno_Terminal","argumentNames":[]}
 
-function Juno_Terminal__P239586_mk(s) {
+function Juno_Terminal__P263359_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Juno_Terminal__P239586, depth: s.depth + 1,
+        parent: s, fn: Juno_Terminal__P263359, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3052,7 +3075,7 @@ function Juno_Terminal__P239586_mk(s) {
   tmp_13: undefined,
   tmp_14: undefined,
   tmp_15: undefined,
-  index___242298: undefined,
+  index___263455: undefined,
 } }
 
 
@@ -3189,6 +3212,114 @@ function settings_list__P237357_mk(s) {
   tmp_0: undefined,
   tmp_1: undefined,
   arg0: undefined,
+} }
+
+
+
+
+
+function Clear__P263196(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.tmp_0 = blockSettings_writeString__P239573_mk(s);
+    s.tmp_0.arg0 = "MostRecentFile";
+    s.tmp_1 = blockSettings_readString__P239574_mk(s);
+    s.tmp_1.arg0 = "DirectorySearch";
+    s.callLocIdx = 55; s.pc = 2; return s.tmp_1;
+  case 2:
+    r0 = s.retval;
+    s.tmp_0.arg1 = r0;
+    s.callLocIdx = 56; s.pc = 1; return s.tmp_0;
+  case 1:
+    r0 = s.retval;
+    s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
+    s.tmp_0.arg0 = false;
+    s.callLocIdx = 57; s.pc = 3; return s.tmp_0;
+  case 3:
+    r0 = s.retval;
+    s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
+    s.tmp_0.arg0 = true;
+    s.callLocIdx = 58; s.pc = 4; return s.tmp_0;
+  case 4:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
+    s.tmp_3.arg0 = "Version";
+    s.callLocIdx = 59; s.pc = 6; return s.tmp_3;
+  case 6:
+    r0 = s.retval;
+    s.tmp_2 = r0;
+    if ((s.tmp_2) && (s.tmp_2).vtable) {
+    setupResume(s, 7);
+    pxsim_String__stringConv(s.tmp_2);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_2) + ""; }
+  case 7:
+    r0 = s.retval;
+    s.tmp_1 = r0;
+    r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
+    s.tmp_0.arg0 = r0;
+    s.callLocIdx = 60; s.pc = 5; return s.tmp_0;
+  case 5:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = " ";
+    s.callLocIdx = 61; s.pc = 8; return s.tmp_0;
+  case 8:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = "COMMANDS";
+    s.callLocIdx = 62; s.pc = 9; return s.tmp_0;
+  case 9:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = "----------------";
+    s.callLocIdx = 63; s.pc = 10; return s.tmp_0;
+  case 10:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = globals.Command_List___263213;
+    s.callLocIdx = 64; s.pc = 11; return s.tmp_0;
+  case 11:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = "Press [MENU] to Access!";
+    s.callLocIdx = 65; s.pc = 12; return s.tmp_0;
+  case 12:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = " ";
+    s.callLocIdx = 66; s.pc = 13; return s.tmp_0;
+  case 13:
+    r0 = s.retval;
+    s.tmp_0 = console_log__P235838_mk(s);
+    s.tmp_0.arg0 = "Juno > ____";
+    s.callLocIdx = 67; s.pc = 14; return s.tmp_0;
+  case 14:
+    r0 = s.retval;
+    r0 = undefined;
+    return leave(s, r0)
+  default: oops()
+} } }
+Clear__P263196.info = {"start":0,"length":483,"line":0,"column":0,"endLine":12,"endColumn":1,"fileName":"main.ts","functionName":"Clear","argumentNames":[]}
+
+function Clear__P263196_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: Clear__P263196, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
 } }
 
 
@@ -23146,7 +23277,7 @@ function game_consoleOverlay_setVisible__P238313_mk(s) {
 
 
 
-function Help__P239587(s) {
+function Help__P263289(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -23158,24 +23289,24 @@ switch (step) {
 
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 180; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 194; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "MostRecentFile";
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "DirectorySearch";
-    s.callLocIdx = 181; s.pc = 3; return s.tmp_1;
+    s.callLocIdx = 195; s.pc = 3; return s.tmp_1;
   case 3:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 182; s.pc = 2; return s.tmp_0;
+    s.callLocIdx = 196; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 183; s.pc = 5; return s.tmp_3;
+    s.callLocIdx = 197; s.pc = 5; return s.tmp_3;
   case 5:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -23190,64 +23321,64 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 184; s.pc = 4; return s.tmp_0;
+    s.callLocIdx = 198; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 185; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 199; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Help(?)";
-    s.callLocIdx = 186; s.pc = 8; return s.tmp_0;
+    s.callLocIdx = 200; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "- Have any questions?";
-    s.callLocIdx = 187; s.pc = 9; return s.tmp_0;
+    s.callLocIdx = 201; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 100;
-    s.callLocIdx = 188; s.pc = 10; return s.tmp_0;
+    s.callLocIdx = 202; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "- Have any comments?";
-    s.callLocIdx = 189; s.pc = 11; return s.tmp_0;
+    s.callLocIdx = 203; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 100;
-    s.callLocIdx = 190; s.pc = 12; return s.tmp_0;
+    s.callLocIdx = 204; s.pc = 12; return s.tmp_0;
   case 12:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Contact Erik_ or Erik44b on Github or go";
-    s.callLocIdx = 191; s.pc = 13; return s.tmp_0;
+    s.callLocIdx = 205; s.pc = 13; return s.tmp_0;
   case 13:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "to the JunoKernel Repository to ask any";
-    s.callLocIdx = 192; s.pc = 14; return s.tmp_0;
+    s.callLocIdx = 206; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "questions / add / remove something";
-    s.callLocIdx = 193; s.pc = 15; return s.tmp_0;
+    s.callLocIdx = 207; s.pc = 15; return s.tmp_0;
   case 15:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Help__P239587.info = {"start":5163,"length":563,"line":147,"column":0,"endLine":160,"endColumn":1,"fileName":"main.ts","functionName":"Help","argumentNames":[]}
+Help__P263289.info = {"start":5695,"length":563,"line":161,"column":0,"endLine":174,"endColumn":1,"fileName":"main.ts","functionName":"Help","argumentNames":[]}
 
-function Help__P239587_mk(s) {
+function Help__P263289_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Help__P239587, depth: s.depth + 1,
+        parent: s, fn: Help__P263289, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -23259,7 +23390,7 @@ function Help__P239587_mk(s) {
 
 
 
-function Registry__P239581(s) {
+function Registry__P263217(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -23271,41 +23402,41 @@ switch (step) {
 
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 55; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 68; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Files:";
-    s.callLocIdx = 56; s.pc = 8; return s.tmp_0;
+    s.callLocIdx = 69; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
-    s.tmp_0 = Setting__Command_List__P239582_mk(s);
-    s.callLocIdx = 57; s.pc = 9; return s.tmp_0;
+    s.tmp_0 = Setting__Command_List__P263221_mk(s);
+    s.callLocIdx = 70; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Add File (?)";
-    s.callLocIdx = 58; s.pc = 10; return s.tmp_0;
+    s.callLocIdx = 71; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 59; s.pc = 11; return s.tmp_0;
+    s.callLocIdx = 72; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > Registry > ____";
-    s.callLocIdx = 60; s.pc = 12; return s.tmp_0;
+    s.callLocIdx = 73; s.pc = 12; return s.tmp_0;
   case 12:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 5000;
-    s.callLocIdx = 61; s.pc = 13; return s.tmp_0;
+    s.callLocIdx = 74; s.pc = 13; return s.tmp_0;
   case 13:
     r0 = s.retval;
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = false;
-    s.callLocIdx = 62; s.pc = 14; return s.tmp_0;
+    s.callLocIdx = 75; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
@@ -23313,27 +23444,27 @@ switch (step) {
     s.tmp_1 = game_askForString__P238224_mk(s);
     s.tmp_1.arg0 = "Registry > ____";
     s.tmp_1.arg1 = 12;
-    s.callLocIdx = 63; s.pc = 16; return s.tmp_1;
+    s.callLocIdx = 76; s.pc = 16; return s.tmp_1;
   case 16:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 64; s.pc = 15; return s.tmp_0;
+    s.callLocIdx = 77; s.pc = 15; return s.tmp_0;
   case 15:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "MostRecentFile";
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "DirectorySearch";
-    s.callLocIdx = 65; s.pc = 18; return s.tmp_1;
+    s.callLocIdx = 78; s.pc = 18; return s.tmp_1;
   case 18:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 66; s.pc = 17; return s.tmp_0;
+    s.callLocIdx = 79; s.pc = 17; return s.tmp_0;
   case 17:
     r0 = s.retval;
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 67; s.pc = 19; return s.tmp_2;
+    s.callLocIdx = 80; s.pc = 19; return s.tmp_2;
   case 19:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -23341,15 +23472,15 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    s.tmp_3 = Registry_Add__P239583_mk(s);
-    s.callLocIdx = 68; s.pc = 20; return s.tmp_3;
+    s.tmp_3 = Registry_Add__P263236_mk(s);
+    s.callLocIdx = 81; s.pc = 20; return s.tmp_3;
   case 20:
     r0 = s.retval;
     { step = 6; continue; }
   case 1:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 69; s.pc = 21; return s.tmp_2;
+    s.callLocIdx = 82; s.pc = 21; return s.tmp_2;
   case 21:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -23357,15 +23488,15 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 2; continue; }
-    s.tmp_3 = Registry_View__P239591_mk(s);
-    s.callLocIdx = 70; s.pc = 22; return s.tmp_3;
+    s.tmp_3 = Registry_View__P263242_mk(s);
+    s.callLocIdx = 83; s.pc = 22; return s.tmp_3;
   case 22:
     r0 = s.retval;
     { step = 5; continue; }
   case 2:
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "DirectorySearch";
-    s.callLocIdx = 71; s.pc = 23; return s.tmp_2;
+    s.callLocIdx = 84; s.pc = 23; return s.tmp_2;
   case 23:
     r0 = s.retval;
     s.tmp_1 = r0;
@@ -23373,14 +23504,14 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_3 = Registry_Delete__P239593_mk(s);
-    s.callLocIdx = 72; s.pc = 24; return s.tmp_3;
+    s.tmp_3 = Registry_Delete__P263248_mk(s);
+    s.callLocIdx = 85; s.pc = 24; return s.tmp_3;
   case 24:
     r0 = s.retval;
     { step = 4; continue; }
   case 3:
-    s.tmp_0 = Registry001__P239585_mk(s);
-    s.callLocIdx = 73; s.pc = 25; return s.tmp_0;
+    s.tmp_0 = Registry001__P263250_mk(s);
+    s.callLocIdx = 86; s.pc = 25; return s.tmp_0;
   case 25:
     r0 = s.retval;
   case 4:
@@ -23390,12 +23521,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Registry__P239581.info = {"start":0,"length":755,"line":0,"column":0,"endLine":20,"endColumn":1,"fileName":"main.ts","functionName":"Registry","argumentNames":[]}
+Registry__P263217.info = {"start":484,"length":755,"line":13,"column":0,"endLine":33,"endColumn":1,"fileName":"main.ts","functionName":"Registry","argumentNames":[]}
 
-function Registry__P239581_mk(s) {
+function Registry__P263217_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Registry__P239581, depth: s.depth + 1,
+        parent: s, fn: Registry__P263217, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -23407,7 +23538,7 @@ function Registry__P239581_mk(s) {
 
 
 
-function Registry001__P239585(s) {
+function Registry001__P263250(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -23419,13 +23550,13 @@ switch (step) {
 
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 120; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 134; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 121; s.pc = 3; return s.tmp_3;
+    s.callLocIdx = 135; s.pc = 3; return s.tmp_3;
   case 3:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -23440,58 +23571,58 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 122; s.pc = 2; return s.tmp_0;
+    s.callLocIdx = 136; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 123; s.pc = 5; return s.tmp_0;
+    s.callLocIdx = 137; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 124; s.pc = 6; return s.tmp_0;
+    s.callLocIdx = 138; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Files:";
-    s.callLocIdx = 125; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 139; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
-    s.tmp_0 = Setting__Command_List__P239582_mk(s);
-    s.callLocIdx = 126; s.pc = 8; return s.tmp_0;
+    s.tmp_0 = Setting__Command_List__P263221_mk(s);
+    s.callLocIdx = 140; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 127; s.pc = 9; return s.tmp_0;
+    s.callLocIdx = 141; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "File Not Found.";
-    s.callLocIdx = 128; s.pc = 10; return s.tmp_0;
+    s.callLocIdx = 142; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 129; s.pc = 11; return s.tmp_0;
+    s.callLocIdx = 143; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > Registry > ____";
-    s.callLocIdx = 130; s.pc = 12; return s.tmp_0;
+    s.callLocIdx = 144; s.pc = 12; return s.tmp_0;
   case 12:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Registry001__P239585.info = {"start":2889,"length":360,"line":81,"column":0,"endLine":92,"endColumn":1,"fileName":"main.ts","functionName":"Registry001","argumentNames":[]}
+Registry001__P263250.info = {"start":3421,"length":360,"line":95,"column":0,"endLine":106,"endColumn":1,"fileName":"main.ts","functionName":"Registry001","argumentNames":[]}
 
-function Registry001__P239585_mk(s) {
+function Registry001__P263250_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Registry001__P239585, depth: s.depth + 1,
+        parent: s, fn: Registry001__P263250, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -23503,7 +23634,7 @@ function Registry001__P239585_mk(s) {
 
 
 
-function Registry_Delete__P239593(s) {
+function Registry_Delete__P263248(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -23517,34 +23648,34 @@ switch (step) {
     s.tmp_0.arg0 = "MostRecentFile";
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "DirectorySearch";
-    s.callLocIdx = 295; s.pc = 6; return s.tmp_1;
+    s.callLocIdx = 311; s.pc = 6; return s.tmp_1;
   case 6:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 296; s.pc = 5; return s.tmp_0;
+    s.callLocIdx = 312; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
     s.tmp_0 = game_askForString__P238224_mk(s);
     s.tmp_0.arg0 = "Insert File Name";
     s.tmp_0.arg1 = 12;
-    s.callLocIdx = 297; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 313; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
-    globals.Temporary_File_Name___239598 = (r0);
+    globals.Temporary_File_Name___263307 = (r0);
     s.tmp_0 = blockSettings_remove__P239577_mk(s);
-    s.tmp_0.arg0 = globals.Temporary_File_Name___239598;
-    s.callLocIdx = 298; s.pc = 8; return s.tmp_0;
+    s.tmp_0.arg0 = globals.Temporary_File_Name___263307;
+    s.callLocIdx = 314; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 299; s.pc = 9; return s.tmp_0;
+    s.callLocIdx = 315; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 300; s.pc = 11; return s.tmp_3;
+    s.callLocIdx = 316; s.pc = 11; return s.tmp_3;
   case 11:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -23559,121 +23690,121 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 301; s.pc = 10; return s.tmp_0;
+    s.callLocIdx = 317; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 302; s.pc = 13; return s.tmp_0;
+    s.callLocIdx = 318; s.pc = 13; return s.tmp_0;
   case 13:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Note: Settings that are bundled with Juno Kernel are unable to be deleted.";
-    s.callLocIdx = 303; s.pc = 14; return s.tmp_0;
+    s.callLocIdx = 319; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 304; s.pc = 15; return s.tmp_0;
+    s.callLocIdx = 320; s.pc = 15; return s.tmp_0;
   case 15:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "You Can Delete:";
-    s.callLocIdx = 305; s.pc = 16; return s.tmp_0;
+    s.callLocIdx = 321; s.pc = 16; return s.tmp_0;
   case 16:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Bootloader [NOT RECOMMENDED]";
-    s.callLocIdx = 306; s.pc = 17; return s.tmp_0;
+    s.callLocIdx = 322; s.pc = 17; return s.tmp_0;
   case 17:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Custom Settings";
-    s.callLocIdx = 307; s.pc = 18; return s.tmp_0;
+    s.callLocIdx = 323; s.pc = 18; return s.tmp_0;
   case 18:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 308; s.pc = 19; return s.tmp_0;
+    s.callLocIdx = 324; s.pc = 19; return s.tmp_0;
   case 19:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 309; s.pc = 20; return s.tmp_0;
+    s.callLocIdx = 325; s.pc = 20; return s.tmp_0;
   case 20:
     r0 = s.retval;
-    r0 = (globals.Temporary_File_Name___239598 == "Bootloader");
+    r0 = (globals.Temporary_File_Name___263307 == "Bootloader");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
     s.tmp_1 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_1.arg0 = false;
-    s.callLocIdx = 310; s.pc = 21; return s.tmp_1;
+    s.callLocIdx = 326; s.pc = 21; return s.tmp_1;
   case 21:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 500;
-    s.callLocIdx = 311; s.pc = 22; return s.tmp_0;
+    s.callLocIdx = 327; s.pc = 22; return s.tmp_0;
   case 22:
     r0 = s.retval;
     s.tmp_0 = scene_setBackgroundColor__P238116_mk(s);
     s.tmp_0.arg0 = 2;
-    s.callLocIdx = 312; s.pc = 23; return s.tmp_0;
+    s.callLocIdx = 328; s.pc = 23; return s.tmp_0;
   case 23:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 100;
-    s.callLocIdx = 313; s.pc = 24; return s.tmp_0;
+    s.callLocIdx = 329; s.pc = 24; return s.tmp_0;
   case 24:
     r0 = s.retval;
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 314; s.pc = 25; return s.tmp_0;
+    s.callLocIdx = 330; s.pc = 25; return s.tmp_0;
   case 25:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno Kernel";
-    s.callLocIdx = 315; s.pc = 26; return s.tmp_0;
+    s.callLocIdx = 331; s.pc = 26; return s.tmp_0;
   case 26:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 316; s.pc = 27; return s.tmp_0;
+    s.callLocIdx = 332; s.pc = 27; return s.tmp_0;
   case 27:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "FATAL ERROR";
-    s.callLocIdx = 317; s.pc = 28; return s.tmp_0;
+    s.callLocIdx = 333; s.pc = 28; return s.tmp_0;
   case 28:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "002 - Key File Deleted";
-    s.callLocIdx = 318; s.pc = 29; return s.tmp_0;
+    s.callLocIdx = 334; s.pc = 29; return s.tmp_0;
   case 29:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 319; s.pc = 30; return s.tmp_0;
+    s.callLocIdx = 335; s.pc = 30; return s.tmp_0;
   case 30:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "What can I do to fix this?";
-    s.callLocIdx = 320; s.pc = 31; return s.tmp_0;
+    s.callLocIdx = 336; s.pc = 31; return s.tmp_0;
   case 31:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "- Restart the Simulator. ";
-    s.callLocIdx = 321; s.pc = 32; return s.tmp_0;
+    s.callLocIdx = 337; s.pc = 32; return s.tmp_0;
   case 32:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "- Juno will need to reinstall the Bootloader.";
-    s.callLocIdx = 322; s.pc = 33; return s.tmp_0;
+    s.callLocIdx = 338; s.pc = 33; return s.tmp_0;
   case 33:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "- All Settings will be removed.";
-    s.callLocIdx = 323; s.pc = 34; return s.tmp_0;
+    s.callLocIdx = 339; s.pc = 34; return s.tmp_0;
   case 34:
     r0 = s.retval;
   case 1:
@@ -23681,7 +23812,7 @@ switch (step) {
     if (!r0) { step = 2; continue; }
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 100;
-    s.callLocIdx = 324; s.pc = 35; return s.tmp_0;
+    s.callLocIdx = 340; s.pc = 35; return s.tmp_0;
   case 35:
     r0 = s.retval;
     { step = 1; continue; }
@@ -23690,7 +23821,7 @@ switch (step) {
   case 3:
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > ____";
-    s.callLocIdx = 325; s.pc = 36; return s.tmp_0;
+    s.callLocIdx = 341; s.pc = 36; return s.tmp_0;
   case 36:
     r0 = s.retval;
   case 4:
@@ -23698,12 +23829,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Registry_Delete__P239593.info = {"start":10267,"length":1351,"line":266,"column":0,"endLine":301,"endColumn":1,"fileName":"main.ts","functionName":"Registry_Delete","argumentNames":[]}
+Registry_Delete__P263248.info = {"start":10896,"length":1351,"line":282,"column":0,"endLine":317,"endColumn":1,"fileName":"main.ts","functionName":"Registry_Delete","argumentNames":[]}
 
-function Registry_Delete__P239593_mk(s) {
+function Registry_Delete__P263248_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Registry_Delete__P239593, depth: s.depth + 1,
+        parent: s, fn: Registry_Delete__P263248, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -23829,7 +23960,7 @@ function settings_remove__P237358_mk(s) {
 
 
 
-function Registry_View__P239591(s) {
+function Registry_View__P263242(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -23843,23 +23974,23 @@ switch (step) {
     s.tmp_0.arg0 = "MostRecentFile";
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "DirectorySearch";
-    s.callLocIdx = 254; s.pc = 12; return s.tmp_1;
+    s.callLocIdx = 270; s.pc = 12; return s.tmp_1;
   case 12:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 255; s.pc = 11; return s.tmp_0;
+    s.callLocIdx = 271; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
     s.tmp_0 = game_askForString__P238224_mk(s);
     s.tmp_0.arg0 = "Insert File Name";
     s.tmp_0.arg1 = 12;
-    s.callLocIdx = 256; s.pc = 13; return s.tmp_0;
+    s.callLocIdx = 272; s.pc = 13; return s.tmp_0;
   case 13:
     r0 = s.retval;
-    globals.Temporary_File_Name___239598 = (r0);
+    globals.Temporary_File_Name___263307 = (r0);
     s.tmp_1 = blockSettings_exists__P239578_mk(s);
-    s.tmp_1.arg0 = globals.Temporary_File_Name___239598;
-    s.callLocIdx = 257; s.pc = 14; return s.tmp_1;
+    s.tmp_1.arg0 = globals.Temporary_File_Name___263307;
+    s.callLocIdx = 273; s.pc = 14; return s.tmp_1;
   case 14:
     r0 = s.retval;
     s.tmp_0 = r0;
@@ -23867,13 +23998,13 @@ switch (step) {
     if (!r0) { step = 1; continue; }
     s.tmp_2 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_2.arg0 = true;
-    s.callLocIdx = 258; s.pc = 15; return s.tmp_2;
+    s.callLocIdx = 274; s.pc = 15; return s.tmp_2;
   case 15:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 259; s.pc = 17; return s.tmp_3;
+    s.callLocIdx = 275; s.pc = 17; return s.tmp_3;
   case 17:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -23888,21 +24019,21 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 260; s.pc = 16; return s.tmp_0;
+    s.callLocIdx = 276; s.pc = 16; return s.tmp_0;
   case 16:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 261; s.pc = 19; return s.tmp_0;
+    s.callLocIdx = 277; s.pc = 19; return s.tmp_0;
   case 19:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
-    if ((globals.Temporary_File_Name___239598) && (globals.Temporary_File_Name___239598).vtable) {
+    if ((globals.Temporary_File_Name___263307) && (globals.Temporary_File_Name___263307).vtable) {
     setupResume(s, 21);
-    pxsim_String__stringConv(globals.Temporary_File_Name___239598);
+    pxsim_String__stringConv(globals.Temporary_File_Name___263307);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.Temporary_File_Name___239598) + ""; }
+    } else { s.retval = (globals.Temporary_File_Name___263307) + ""; }
   case 21:
     r0 = s.retval;
     s.tmp_3 = r0;
@@ -23919,40 +24050,40 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_1, "\"");
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 262; s.pc = 20; return s.tmp_0;
+    s.callLocIdx = 278; s.pc = 20; return s.tmp_0;
   case 20:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
-    s.tmp_1.arg0 = globals.Temporary_File_Name___239598;
-    s.callLocIdx = 263; s.pc = 24; return s.tmp_1;
+    s.tmp_1.arg0 = globals.Temporary_File_Name___263307;
+    s.callLocIdx = 279; s.pc = 24; return s.tmp_1;
   case 24:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 264; s.pc = 23; return s.tmp_0;
+    s.callLocIdx = 280; s.pc = 23; return s.tmp_0;
   case 23:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 265; s.pc = 25; return s.tmp_0;
+    s.callLocIdx = 281; s.pc = 25; return s.tmp_0;
   case 25:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > ____";
-    s.callLocIdx = 266; s.pc = 26; return s.tmp_0;
+    s.callLocIdx = 282; s.pc = 26; return s.tmp_0;
   case 26:
     r0 = s.retval;
     { step = 10; continue; }
   case 1:
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 267; s.pc = 27; return s.tmp_0;
+    s.callLocIdx = 283; s.pc = 27; return s.tmp_0;
   case 27:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 268; s.pc = 29; return s.tmp_3;
+    s.callLocIdx = 284; s.pc = 29; return s.tmp_3;
   case 29:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -23967,26 +24098,26 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 269; s.pc = 28; return s.tmp_0;
+    s.callLocIdx = 285; s.pc = 28; return s.tmp_0;
   case 28:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 270; s.pc = 31; return s.tmp_0;
+    s.callLocIdx = 286; s.pc = 31; return s.tmp_0;
   case 31:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Error 001 - No Settings";
-    s.callLocIdx = 271; s.pc = 32; return s.tmp_0;
+    s.callLocIdx = 287; s.pc = 32; return s.tmp_0;
   case 32:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
-    if ((globals.Temporary_File_Name___239598) && (globals.Temporary_File_Name___239598).vtable) {
+    if ((globals.Temporary_File_Name___263307) && (globals.Temporary_File_Name___263307).vtable) {
     setupResume(s, 34);
-    pxsim_String__stringConv(globals.Temporary_File_Name___239598);
+    pxsim_String__stringConv(globals.Temporary_File_Name___263307);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.Temporary_File_Name___239598) + ""; }
+    } else { s.retval = (globals.Temporary_File_Name___263307) + ""; }
   case 34:
     r0 = s.retval;
     s.tmp_3 = r0;
@@ -24003,16 +24134,16 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_1, "\"");
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 272; s.pc = 33; return s.tmp_0;
+    s.callLocIdx = 288; s.pc = 33; return s.tmp_0;
   case 33:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
-    if ((globals.Temporary_File_Name___239598) && (globals.Temporary_File_Name___239598).vtable) {
+    if ((globals.Temporary_File_Name___263307) && (globals.Temporary_File_Name___263307).vtable) {
     setupResume(s, 37);
-    pxsim_String__stringConv(globals.Temporary_File_Name___239598);
+    pxsim_String__stringConv(globals.Temporary_File_Name___263307);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.Temporary_File_Name___239598) + ""; }
+    } else { s.retval = (globals.Temporary_File_Name___263307) + ""; }
   case 37:
     r0 = s.retval;
     s.tmp_3 = r0;
@@ -24029,26 +24160,26 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_1, "\"?");
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 273; s.pc = 36; return s.tmp_0;
+    s.callLocIdx = 289; s.pc = 36; return s.tmp_0;
   case 36:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 2000;
-    s.callLocIdx = 274; s.pc = 39; return s.tmp_0;
+    s.callLocIdx = 290; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = false;
-    s.callLocIdx = 275; s.pc = 40; return s.tmp_0;
+    s.callLocIdx = 291; s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
     s.tmp_0 = game_askForString__P238224_mk(s);
-    if ((globals.Temporary_File_Name___239598) && (globals.Temporary_File_Name___239598).vtable) {
+    if ((globals.Temporary_File_Name___263307) && (globals.Temporary_File_Name___263307).vtable) {
     setupResume(s, 42);
-    pxsim_String__stringConv(globals.Temporary_File_Name___239598);
+    pxsim_String__stringConv(globals.Temporary_File_Name___263307);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.Temporary_File_Name___239598) + ""; }
+    } else { s.retval = (globals.Temporary_File_Name___263307) + ""; }
   case 42:
     r0 = s.retval;
     s.tmp_3 = r0;
@@ -24066,18 +24197,18 @@ switch (step) {
     r0 = pxsim_String__concat(s.tmp_1, "\"?");
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = 12;
-    s.callLocIdx = 276; s.pc = 41; return s.tmp_0;
+    s.callLocIdx = 292; s.pc = 41; return s.tmp_0;
   case 41:
     r0 = s.retval;
-    globals.RegistryView001BooleanCreate___239594 = (r0);
-    r0 = (globals.RegistryView001BooleanCreate___239594 == "Yes");
+    globals.RegistryView001BooleanCreate___263672 = (r0);
+    r0 = (globals.RegistryView001BooleanCreate___263672 == "Yes");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 2; continue; }
     r0 = s.tmp_0;
     { step = 3; continue; }
   case 2:
-    r0 = (globals.RegistryView001BooleanCreate___239594 == "yes");
+    r0 = (globals.RegistryView001BooleanCreate___263672 == "yes");
   case 3:
     // jmp value (already in r0)
     s.tmp_1 = r0;
@@ -24086,25 +24217,25 @@ switch (step) {
     s.tmp_2 = game_askForString__P238224_mk(s);
     s.tmp_2.arg0 = "Insert File Data";
     s.tmp_2.arg1 = 12;
-    s.callLocIdx = 277; s.pc = 44; return s.tmp_2;
+    s.callLocIdx = 293; s.pc = 44; return s.tmp_2;
   case 44:
     r0 = s.retval;
-    globals.Temporary_File_Data___239597 = (r0);
+    globals.Temporary_File_Data___263310 = (r0);
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
-    s.tmp_0.arg0 = globals.Temporary_File_Name___239598;
-    s.tmp_0.arg1 = globals.Temporary_File_Data___239597;
-    s.callLocIdx = 278; s.pc = 45; return s.tmp_0;
+    s.tmp_0.arg0 = globals.Temporary_File_Name___263307;
+    s.tmp_0.arg1 = globals.Temporary_File_Data___263310;
+    s.callLocIdx = 294; s.pc = 45; return s.tmp_0;
   case 45:
     r0 = s.retval;
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 279; s.pc = 46; return s.tmp_0;
+    s.callLocIdx = 295; s.pc = 46; return s.tmp_0;
   case 46:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 280; s.pc = 48; return s.tmp_3;
+    s.callLocIdx = 296; s.pc = 48; return s.tmp_3;
   case 48:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -24119,21 +24250,21 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 281; s.pc = 47; return s.tmp_0;
+    s.callLocIdx = 297; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 282; s.pc = 50; return s.tmp_0;
+    s.callLocIdx = 298; s.pc = 50; return s.tmp_0;
   case 50:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
-    if ((globals.Temporary_File_Name___239598) && (globals.Temporary_File_Name___239598).vtable) {
+    if ((globals.Temporary_File_Name___263307) && (globals.Temporary_File_Name___263307).vtable) {
     setupResume(s, 52);
-    pxsim_String__stringConv(globals.Temporary_File_Name___239598);
+    pxsim_String__stringConv(globals.Temporary_File_Name___263307);
     checkResumeConsumed();
     return;
-    } else { s.retval = (globals.Temporary_File_Name___239598) + ""; }
+    } else { s.retval = (globals.Temporary_File_Name___263307) + ""; }
   case 52:
     r0 = s.retval;
     s.tmp_7 = r0;
@@ -24172,32 +24303,32 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_1, "has Been Created.");
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 283; s.pc = 51; return s.tmp_0;
+    s.callLocIdx = 299; s.pc = 51; return s.tmp_0;
   case 51:
     r0 = s.retval;
     { step = 9; continue; }
   case 4:
-    r0 = (globals.RegistryView001BooleanCreate___239594 == "No");
+    r0 = (globals.RegistryView001BooleanCreate___263672 == "No");
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 5; continue; }
     r0 = s.tmp_0;
     { step = 6; continue; }
   case 5:
-    r0 = (globals.RegistryView001BooleanCreate___239594 == "no");
+    r0 = (globals.RegistryView001BooleanCreate___263672 == "no");
   case 6:
     // jmp value (already in r0)
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 7; continue; }
     s.tmp_2 = game_reset__P238715_mk(s);
-    s.callLocIdx = 284; s.pc = 56; return s.tmp_2;
+    s.callLocIdx = 300; s.pc = 56; return s.tmp_2;
   case 56:
     r0 = s.retval;
     { step = 8; continue; }
   case 7:
     s.tmp_0 = game_reset__P238715_mk(s);
-    s.callLocIdx = 285; s.pc = 57; return s.tmp_0;
+    s.callLocIdx = 301; s.pc = 57; return s.tmp_0;
   case 57:
     r0 = s.retval;
   case 8:
@@ -24207,12 +24338,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Registry_View__P239591.info = {"start":8140,"length":1800,"line":221,"column":0,"endLine":255,"endColumn":1,"fileName":"main.ts","functionName":"Registry_View","argumentNames":[]}
+Registry_View__P263242.info = {"start":8769,"length":1800,"line":237,"column":0,"endLine":271,"endColumn":1,"fileName":"main.ts","functionName":"Registry_View","argumentNames":[]}
 
-function Registry_View__P239591_mk(s) {
+function Registry_View__P263242_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Registry_View__P239591, depth: s.depth + 1,
+        parent: s, fn: Registry_View__P263242, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -24228,7 +24359,7 @@ function Registry_View__P239591_mk(s) {
 
 
 
-function Registry_Add__P239583(s) {
+function Registry_Add__P263236(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -24242,42 +24373,42 @@ switch (step) {
     s.tmp_0.arg0 = "MostRecentFile";
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "DirectorySearch";
-    s.callLocIdx = 101; s.pc = 2; return s.tmp_1;
+    s.callLocIdx = 114; s.pc = 2; return s.tmp_1;
   case 2:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 102; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 115; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = game_askForString__P238224_mk(s);
     s.tmp_0.arg0 = "Insert File Name";
     s.tmp_0.arg1 = 12;
-    s.callLocIdx = 103; s.pc = 3; return s.tmp_0;
+    s.callLocIdx = 116; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
-    globals.Temporary_File_Name___239598 = (r0);
+    globals.Temporary_File_Name___263307 = (r0);
     s.tmp_0 = game_askForString__P238224_mk(s);
     s.tmp_0.arg0 = "Insert File Data";
     s.tmp_0.arg1 = 12;
-    s.callLocIdx = 104; s.pc = 4; return s.tmp_0;
+    s.callLocIdx = 117; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
-    globals.Temporary_File_Data___239597 = (r0);
+    globals.Temporary_File_Data___263310 = (r0);
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
-    s.tmp_0.arg0 = globals.Temporary_File_Name___239598;
-    s.tmp_0.arg1 = globals.Temporary_File_Data___239597;
-    s.callLocIdx = 105; s.pc = 5; return s.tmp_0;
+    s.tmp_0.arg0 = globals.Temporary_File_Name___263307;
+    s.tmp_0.arg1 = globals.Temporary_File_Data___263310;
+    s.callLocIdx = 118; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
     s.tmp_0 = spriteutils_setConsoleOverlay__P239565_mk(s);
     s.tmp_0.arg0 = true;
-    s.callLocIdx = 106; s.pc = 6; return s.tmp_0;
+    s.callLocIdx = 119; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_3 = blockSettings_readNumber__P239572_mk(s);
     s.tmp_3.arg0 = "Version";
-    s.callLocIdx = 107; s.pc = 8; return s.tmp_3;
+    s.callLocIdx = 120; s.pc = 8; return s.tmp_3;
   case 8:
     r0 = s.retval;
     s.tmp_2 = r0;
@@ -24292,18 +24423,18 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat("Juno Kernel Version ", s.tmp_1);
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 108; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 121; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 109; s.pc = 10; return s.tmp_0;
+    s.callLocIdx = 122; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_9 = blockSettings_readString__P239574_mk(s);
-    s.tmp_9.arg0 = globals.Temporary_File_Name___239598;
-    s.callLocIdx = 110; s.pc = 12; return s.tmp_9;
+    s.tmp_9.arg0 = globals.Temporary_File_Name___263307;
+    s.callLocIdx = 123; s.pc = 12; return s.tmp_9;
   case 12:
     r0 = s.retval;
     s.tmp_8 = r0;
@@ -24353,19 +24484,19 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_String__concat(s.tmp_1, "has Been Created.");
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 111; s.pc = 11; return s.tmp_0;
+    s.callLocIdx = 124; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Registry_Add__P239583.info = {"start":1721,"length":564,"line":52,"column":0,"endLine":61,"endColumn":1,"fileName":"main.ts","functionName":"Registry_Add","argumentNames":[]}
+Registry_Add__P263236.info = {"start":2205,"length":564,"line":65,"column":0,"endLine":74,"endColumn":1,"fileName":"main.ts","functionName":"Registry_Add","argumentNames":[]}
 
-function Registry_Add__P239583_mk(s) {
+function Registry_Add__P263236_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Registry_Add__P239583, depth: s.depth + 1,
+        parent: s, fn: Registry_Add__P263236, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -24384,7 +24515,7 @@ function Registry_Add__P239583_mk(s) {
 
 
 
-function Setting__Command_List__P239582(s) {
+function Setting__Command_List__P263221(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -24396,84 +24527,84 @@ switch (step) {
 
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Files";
-    s.callLocIdx = 87; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 100; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 10;
-    s.callLocIdx = 88; s.pc = 2; return s.tmp_0;
+    s.callLocIdx = 101; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Directory";
-    s.callLocIdx = 89; s.pc = 3; return s.tmp_0;
+    s.callLocIdx = 102; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 10;
-    s.callLocIdx = 90; s.pc = 4; return s.tmp_0;
+    s.callLocIdx = 103; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Version";
-    s.callLocIdx = 91; s.pc = 5; return s.tmp_0;
+    s.callLocIdx = 104; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 10;
-    s.callLocIdx = 92; s.pc = 6; return s.tmp_0;
+    s.callLocIdx = 105; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "VersionLog";
-    s.callLocIdx = 93; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 106; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 10;
-    s.callLocIdx = 94; s.pc = 8; return s.tmp_0;
+    s.callLocIdx = 107; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Bootloader";
-    s.callLocIdx = 95; s.pc = 9; return s.tmp_0;
+    s.callLocIdx = 108; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 10;
-    s.callLocIdx = 96; s.pc = 10; return s.tmp_0;
+    s.callLocIdx = 109; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Registry";
-    s.callLocIdx = 97; s.pc = 11; return s.tmp_0;
+    s.callLocIdx = 110; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 10;
-    s.callLocIdx = 98; s.pc = 12; return s.tmp_0;
+    s.callLocIdx = 111; s.pc = 12; return s.tmp_0;
   case 12:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 99; s.pc = 13; return s.tmp_0;
+    s.callLocIdx = 112; s.pc = 13; return s.tmp_0;
   case 13:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > ____";
-    s.callLocIdx = 100; s.pc = 14; return s.tmp_0;
+    s.callLocIdx = 113; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Setting__Command_List__P239582.info = {"start":1378,"length":342,"line":36,"column":0,"endLine":51,"endColumn":1,"fileName":"main.ts","functionName":"Setting__Command_List","argumentNames":[]}
+Setting__Command_List__P263221.info = {"start":1862,"length":342,"line":49,"column":0,"endLine":64,"endColumn":1,"fileName":"main.ts","functionName":"Setting__Command_List","argumentNames":[]}
 
-function Setting__Command_List__P239582_mk(s) {
+function Setting__Command_List__P263221_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Setting__Command_List__P239582, depth: s.depth + 1,
+        parent: s, fn: Setting__Command_List__P263221, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -24482,7 +24613,7 @@ function Setting__Command_List__P239582_mk(s) {
 
 
 
-function Files__P239590(s) {
+function Files__P263278(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -24496,52 +24627,52 @@ switch (step) {
     s.tmp_0.arg0 = "MostRecentFile";
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "DirectorySearch";
-    s.callLocIdx = 246; s.pc = 2; return s.tmp_1;
+    s.callLocIdx = 262; s.pc = 2; return s.tmp_1;
   case 2:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 247; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 263; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 248; s.pc = 3; return s.tmp_0;
+    s.callLocIdx = 264; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Files:";
-    s.callLocIdx = 249; s.pc = 4; return s.tmp_0;
+    s.callLocIdx = 265; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
     s.tmp_0 = pause__P235871_mk(s);
     s.tmp_0.arg0 = 100;
-    s.callLocIdx = 250; s.pc = 5; return s.tmp_0;
+    s.callLocIdx = 266; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
-    s.tmp_0 = Setting__Command_List__P239582_mk(s);
-    s.callLocIdx = 251; s.pc = 6; return s.tmp_0;
+    s.tmp_0 = Setting__Command_List__P263221_mk(s);
+    s.callLocIdx = 267; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 252; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 268; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > ____";
-    s.callLocIdx = 253; s.pc = 8; return s.tmp_0;
+    s.callLocIdx = 269; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Files__P239590.info = {"start":7883,"length":256,"line":212,"column":0,"endLine":220,"endColumn":1,"fileName":"main.ts","functionName":"Files","argumentNames":[]}
+Files__P263278.info = {"start":8512,"length":256,"line":228,"column":0,"endLine":236,"endColumn":1,"fileName":"main.ts","functionName":"Files","argumentNames":[]}
 
-function Files__P239590_mk(s) {
+function Files__P263278_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Files__P239590, depth: s.depth + 1,
+        parent: s, fn: Files__P263278, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -24551,7 +24682,7 @@ function Files__P239590_mk(s) {
 
 
 
-function VersionLog__P239592(s) {
+function VersionLog__P263272(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -24565,58 +24696,58 @@ switch (step) {
     s.tmp_0.arg0 = "MostRecentFile";
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "DirectorySearch";
-    s.callLocIdx = 286; s.pc = 2; return s.tmp_1;
+    s.callLocIdx = 302; s.pc = 2; return s.tmp_1;
   case 2:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 287; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 303; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 288; s.pc = 3; return s.tmp_0;
+    s.callLocIdx = 304; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Kernel Update";
-    s.callLocIdx = 289; s.pc = 4; return s.tmp_0;
+    s.callLocIdx = 305; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 290; s.pc = 5; return s.tmp_0;
+    s.callLocIdx = 306; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "- Added Bootloader Setting";
-    s.callLocIdx = 291; s.pc = 6; return s.tmp_0;
+    s.callLocIdx = 307; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "- Added Files";
-    s.callLocIdx = 292; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 308; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 293; s.pc = 8; return s.tmp_0;
+    s.callLocIdx = 309; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > ____";
-    s.callLocIdx = 294; s.pc = 9; return s.tmp_0;
+    s.callLocIdx = 310; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-VersionLog__P239592.info = {"start":9941,"length":325,"line":256,"column":0,"endLine":265,"endColumn":1,"fileName":"main.ts","functionName":"VersionLog","argumentNames":[]}
+VersionLog__P263272.info = {"start":10570,"length":325,"line":272,"column":0,"endLine":281,"endColumn":1,"fileName":"main.ts","functionName":"VersionLog","argumentNames":[]}
 
-function VersionLog__P239592_mk(s) {
+function VersionLog__P263272_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: VersionLog__P239592, depth: s.depth + 1,
+        parent: s, fn: VersionLog__P263272, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -24626,7 +24757,7 @@ function VersionLog__P239592_mk(s) {
 
 
 
-function Version__P239588(s) {
+function Version__P263266(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -24640,48 +24771,48 @@ switch (step) {
     s.tmp_0.arg0 = "MostRecentFile";
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "DirectorySearch";
-    s.callLocIdx = 194; s.pc = 2; return s.tmp_1;
+    s.callLocIdx = 208; s.pc = 2; return s.tmp_1;
   case 2:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 195; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 209; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 196; s.pc = 3; return s.tmp_0;
+    s.callLocIdx = 210; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "This version is up ";
-    s.callLocIdx = 197; s.pc = 4; return s.tmp_0;
+    s.callLocIdx = 211; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "to date.";
-    s.callLocIdx = 198; s.pc = 5; return s.tmp_0;
+    s.callLocIdx = 212; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 199; s.pc = 6; return s.tmp_0;
+    s.callLocIdx = 213; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > ____";
-    s.callLocIdx = 200; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 214; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Version__P239588.info = {"start":5727,"length":256,"line":161,"column":0,"endLine":168,"endColumn":1,"fileName":"main.ts","functionName":"Version","argumentNames":[]}
+Version__P263266.info = {"start":6259,"length":256,"line":175,"column":0,"endLine":182,"endColumn":1,"fileName":"main.ts","functionName":"Version","argumentNames":[]}
 
-function Version__P239588_mk(s) {
+function Version__P263266_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Version__P239588, depth: s.depth + 1,
+        parent: s, fn: Version__P263266, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -24691,7 +24822,7 @@ function Version__P239588_mk(s) {
 
 
 
-function Directory__P239589(s) {
+function Directory__P263260(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -24703,59 +24834,59 @@ switch (step) {
 
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 238; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 254; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = blockSettings_writeString__P239573_mk(s);
     s.tmp_0.arg0 = "MostRecentFile";
     s.tmp_1 = blockSettings_readString__P239574_mk(s);
     s.tmp_1.arg0 = "DirectorySearch";
-    s.callLocIdx = 239; s.pc = 3; return s.tmp_1;
+    s.callLocIdx = 255; s.pc = 3; return s.tmp_1;
   case 3:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.callLocIdx = 240; s.pc = 2; return s.tmp_0;
+    s.callLocIdx = 256; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     s.tmp_2 = blockSettings_readString__P239574_mk(s);
     s.tmp_2.arg0 = "Directory";
-    s.callLocIdx = 241; s.pc = 4; return s.tmp_2;
+    s.callLocIdx = 257; s.pc = 4; return s.tmp_2;
   case 4:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_1);
-    globals.Command_List___239595 = (s.tmp_0);
+    globals.Command_List___263213 = (s.tmp_0);
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_1 = blockSettings_list__P239579_mk(s);
-    s.callLocIdx = 242; s.pc = 6; return s.tmp_1;
+    s.callLocIdx = 258; s.pc = 6; return s.tmp_1;
   case 6:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.callLocIdx = 243; s.pc = 5; return s.tmp_0;
+    s.callLocIdx = 259; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = " ";
-    s.callLocIdx = 244; s.pc = 7; return s.tmp_0;
+    s.callLocIdx = 260; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
     s.tmp_0 = console_log__P235838_mk(s);
     s.tmp_0.arg0 = "Juno > ____";
-    s.callLocIdx = 245; s.pc = 8; return s.tmp_0;
+    s.callLocIdx = 261; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-Directory__P239589.info = {"start":7594,"length":288,"line":204,"column":0,"endLine":211,"endColumn":1,"fileName":"main.ts","functionName":"Directory","argumentNames":[]}
+Directory__P263260.info = {"start":8223,"length":288,"line":220,"column":0,"endLine":227,"endColumn":1,"fileName":"main.ts","functionName":"Directory","argumentNames":[]}
 
-function Directory__P239589_mk(s) {
+function Directory__P263260_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Directory__P239589, depth: s.depth + 1,
+        parent: s, fn: Directory__P263260, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -47654,7 +47785,7 @@ const sprites_BaseSpriteSayRenderer__C237541_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["Command_List___239595","SystemReinstallVerificationBoolean___239596","Temporary_File_Name___239598","RegistryView001BooleanCreate___239594","Temporary_File_Data___239597"])
+const breakpoints = setupDebugger(1, ["Command_List___263213","SystemReinstallVerificationBoolean___263348","Temporary_File_Name___263307","RegistryView001BooleanCreate___263672","Temporary_File_Data___263310"])
 
-return _main___P254648
+return _main___P264359
 })
