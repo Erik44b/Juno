@@ -1,19 +1,3 @@
-function Setting__Command_List() {
-    console.log("Files")
-    pause(10)
-    console.log("Directory")
-    pause(10)
-    console.log("Version")
-    pause(10)
-    console.log("VersionLog")
-    pause(10)
-    console.log("Bootloader")
-    pause(10)
-    console.log("Registry")
-    pause(10)
-    console.log(" ")
-    console.log("Juno > ____")
-}
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     spriteutils.setConsoleOverlay(false)
     blockSettings.writeString("DirectorySearch", game.askForString("Insert Command"))
@@ -166,7 +150,23 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         console.log("Juno > ____")
     }
 })
-function Juno() {
+function Setting__Command_List () {
+    console.log("Files")
+    pause(10)
+    console.log("Directory")
+    pause(10)
+    console.log("Version")
+    pause(10)
+    console.log("VersionLog")
+    pause(10)
+    console.log("Bootloader")
+    pause(10)
+    console.log("Registry")
+    pause(10)
+    console.log(" ")
+    console.log("Juno > ____")
+}
+function Juno () {
     blockSettings.writeNumber("Version", 24)
     blockSettings.writeString("VersionLog", "Version 0024")
     SystemReinstallVerificationBoolean = false
@@ -176,16 +176,16 @@ function Juno() {
     blockSettings.writeString("Registry", "ver0.24.0")
     blockSettings.writeString("Help", "ver0.24.0")
     Command_List = [
-        "Directory",
-        "Version",
-        "VersionLog",
-        "Files",
-        "Registry",
-        "Help"
+    "Directory",
+    "Version",
+    "VersionLog",
+    "Files",
+    "Registry",
+    "Help"
     ]
     GUI()
 }
-function GUI() {
+function GUI () {
     spriteutils.setConsoleOverlay(true)
     pause(100)
     console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
@@ -231,7 +231,7 @@ function GUI() {
     console.log(" ")
     console.log("Juno > ____")
 }
-function Registry001() {
+function Registry001 () {
     spriteutils.setConsoleOverlay(true)
     console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
     console.log(" ")
