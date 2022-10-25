@@ -1,4 +1,4 @@
-function Setting__Command_List () {
+function Setting__Command_List() {
     console.log("Files")
     pause(10)
     console.log("Directory")
@@ -66,16 +66,42 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 spriteutils.setConsoleOverlay(true)
                 console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
                 console.log(" ")
-                console.log("\"" + blockSettings.readNumber(Temporary_File_Name) + "\"" + "" + "has Been Created.")
+                console.log("\"" + blockSettings.readString(Temporary_File_Name) + "\"" + "" + "has Been Created.")
             } else if (blockSettings.readString("DirectorySearch") == "No") {
                 game.reset()
             } else if (blockSettings.readString("DirectorySearch") == "View") {
-                spriteutils.setConsoleOverlay(true)
-                console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
-                console.log(" ")
-                Setting__Command_List()
-                console.log(" ")
-                console.log("Commands")
+                Temporary_File_Name = game.askForString("Insert File Name")
+                if (blockSettings.exists(Temporary_File_Name)) {
+                    spriteutils.setConsoleOverlay(true)
+                    console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
+                    console.log(" ")
+                    console.log("\"" + Temporary_File_Name + "\"")
+                    console.log(blockSettings.readString(Temporary_File_Name))
+                    console.log(" ")
+                    console.log("Juno > ____")
+                } else {
+                    spriteutils.setConsoleOverlay(true)
+                    console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
+                    console.log(" ")
+                    console.log("Error 001 - No Settings")
+                    console.log("found with name \"" + Temporary_File_Name + "\"")
+                    console.log("Create new setting with name \"" + Temporary_File_Name + "\"?")
+                    pause(2000)
+                    spriteutils.setConsoleOverlay(false)
+                    RegistryView001BooleanCreate = game.askForString("Create setting with name \"" + Temporary_File_Name + "\"?")
+                    if (RegistryView001BooleanCreate == "Yes" || RegistryView001BooleanCreate == "yes") {
+                        Temporary_File_Data = game.askForString("Insert File Data")
+                        blockSettings.writeString(Temporary_File_Name, Temporary_File_Data)
+                        spriteutils.setConsoleOverlay(true)
+                        console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
+                        console.log(" ")
+                        console.log("\"" + Temporary_File_Name + "\"" + " " + "has Been Created.")
+                    } else if (RegistryView001BooleanCreate == "No" || RegistryView001BooleanCreate == "no") {
+                        game.reset()
+                    } else {
+                        game.reset()
+                    }
+                }
             } else if (blockSettings.readString("DirectorySearch") == "Delete") {
                 Temporary_File_Name = game.askForString("Insert File Name")
                 blockSettings.remove(Temporary_File_Name)
@@ -113,9 +139,22 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             } else {
                 Registry001()
             }
+        } else if (blockSettings.readString("DirectorySearch") == "Help") {
+            spriteutils.setConsoleOverlay(true)
+            console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
+            console.log(" ")
+            console.log("Help(?)")
+            console.log("- Have any questions?")
+            pause(100)
+            console.log("- Have any comments?")
+            pause(100)
+            console.log("Contact Erik_ or Erik44b on Github or go")
+            console.log("to the JunoKernel Repository to ask any")
+            console.log("questions / add / remove something")
         }
     } else {
         spriteutils.setConsoleOverlay(true)
+        console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
         console.log(" ")
         console.log("Error 001 - No Settings")
         console.log("found with name \"" + blockSettings.readString("DirectorySearch") + "\"")
@@ -127,24 +166,26 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         console.log("Juno > ____")
     }
 })
-function Juno () {
-    blockSettings.writeNumber("Version", 21)
-    blockSettings.writeString("VersionLog", "Version 0021 - GUI Update")
+function Juno() {
+    blockSettings.writeNumber("Version", 24)
+    blockSettings.writeString("VersionLog", "Version 0024")
     SystemReinstallVerificationBoolean = false
     blockSettings.writeString("Directory", "Directory")
     blockSettings.writeString("Directory.Search", "DirectorySearch")
     blockSettings.writeString("Files", "Settings + Commands")
-    blockSettings.writeString("Registry", "ver0.21.1")
+    blockSettings.writeString("Registry", "ver0.24.0")
+    blockSettings.writeString("Help", "ver0.24.0")
     Command_List = [
-    "Directory",
-    "Version",
-    "VersionLog",
-    "Files",
-    "Registry"
+        "Directory",
+        "Version",
+        "VersionLog",
+        "Files",
+        "Registry",
+        "Help"
     ]
     GUI()
 }
-function GUI () {
+function GUI() {
     spriteutils.setConsoleOverlay(true)
     pause(100)
     console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
@@ -190,7 +231,7 @@ function GUI () {
     console.log(" ")
     console.log("Juno > ____")
 }
-function Registry001 () {
+function Registry001() {
     spriteutils.setConsoleOverlay(true)
     console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
     console.log(" ")
@@ -203,6 +244,7 @@ function Registry001 () {
     console.log("Juno > Registry > ____")
 }
 let SystemReinstallVerificationBoolean = false
+let RegistryView001BooleanCreate = ""
 let Temporary_File_Data = ""
 let Temporary_File_Name = ""
 let Command_List: string[] = []
@@ -217,7 +259,7 @@ if (blockSettings.exists("Bootloader")) {
     console.log("NOTE: Some Settings Might be installed that aren't listed below. Once setup finishes please use the  'Files' Command to view  all settings.")
     pause(500)
     console.log(" ")
-    blockSettings.writeString("Registry", "ver0.21.1")
+    blockSettings.writeString("Registry", "ver0.24.0")
     console.log("Registry {Installed}")
     pause(500)
     blockSettings.writeString("Files", "Settings + Commands")
@@ -230,7 +272,7 @@ if (blockSettings.exists("Bootloader")) {
     console.log("Version {Installed}")
     pause(500)
     console.log(" ")
-    console.log("Installing the Bootloader...")
+    console.log("Installing Bootloader...")
     blockSettings.writeNumber("Bootloader", 21)
     console.log("Bootloader has installed!")
     console.log("The Kernel will now")
