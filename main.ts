@@ -1,16 +1,18 @@
-function Clear () {
-    blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
-    spriteutils.setConsoleOverlay(false)
-    spriteutils.setConsoleOverlay(true)
-    console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
-    console.log(" ")
-    console.log("COMMANDS")
-    console.log("----------------")
-    console.log(Command_List)
-    console.log("Press [MENU] to Access!")
-    console.log(" ")
-    console.log("Juno > ____")
-}
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (blockSettings.readString("MostRecentFile") == "Directory") {
+        Directory()
+    } else if (blockSettings.readString("MostRecentFile") == "Version") {
+        Version()
+    } else if (blockSettings.readString("MostRecentFile") == "VersionLog") {
+        VersionLog()
+    } else if (blockSettings.readString("MostRecentFile") == "Files") {
+        Files()
+    } else if (blockSettings.readString("MostRecentFile") == "Registry") {
+        Registry()
+    } else if (blockSettings.readString("MostRecentFile") == "Help") {
+        Help()
+    }
+})
 function Registry () {
     console.log(" ")
     console.log("Files:")
@@ -28,23 +30,45 @@ function Registry () {
         Registry_View()
     } else if (blockSettings.readString("DirectorySearch") == "Delete") {
         Registry_Delete()
+    } else if (blockSettings.readString("DirectorySearch") == "Edit") {
+        Registry_Edit()
     } else {
         Registry001()
     }
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (blockSettings.readString("MostRecentFile") == "Directory") {
-        Directory()
-    } else if (blockSettings.readString("MostRecentFile") == "Version") {
-        Version()
-    } else if (blockSettings.readString("MostRecentFile") == "VersionLog") {
-        VersionLog()
-    } else if (blockSettings.readString("MostRecentFile") == "Files") {
-        Files()
-    } else if (blockSettings.readString("MostRecentFile") == "Registry") {
-        Registry()
-    } else if (blockSettings.readString("MostRecentFile") == "Help") {
-        Help()
+    spriteutils.setConsoleOverlay(false)
+    blockSettings.writeString("DirectorySearch", game.askForString("Insert Command"))
+    if (blockSettings.exists(blockSettings.readString("DirectorySearch"))) {
+        spriteutils.setConsoleOverlay(true)
+        console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
+        console.log(" ")
+        console.log("\"" + blockSettings.readString("DirectorySearch") + "\"")
+        if (blockSettings.readString("DirectorySearch") == "Directory") {
+            Directory()
+        } else if (blockSettings.readString("DirectorySearch") == "Version") {
+            Version()
+        } else if (blockSettings.readString("DirectorySearch") == "VersionLog") {
+            VersionLog()
+        } else if (blockSettings.readString("DirectorySearch") == "Files") {
+            Files()
+        } else if (blockSettings.readString("DirectorySearch") == "Registry") {
+            Registry()
+        } else if (blockSettings.readString("DirectorySearch") == "Help") {
+            Help()
+        }
+    } else {
+        spriteutils.setConsoleOverlay(true)
+        console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
+        console.log(" ")
+        console.log("Error 001 - No Settings")
+        console.log("found with name \"" + blockSettings.readString("DirectorySearch") + "\"")
+        pause(100)
+        console.log(" ")
+        console.log("Available Commands:")
+        console.log(Command_List)
+        console.log(" ")
+        console.log("Juno > ____")
     }
 })
 function Setting__Command_List () {
@@ -82,7 +106,6 @@ function Juno () {
     blockSettings.writeString("Files", "Settings + Commands")
     blockSettings.writeString("Registry", "ver0.27.0")
     blockSettings.writeString("Help", "ver0.27.0")
-    blockSettings.writeString("Clear", "Clear")
     Command_List = [
     "Directory",
     "Version",
@@ -120,13 +143,13 @@ function Juno_Terminal () {
             console.log("SHORTCUTS")
             console.log("----------------")
             console.log(blockSettings.readString("MostRecentFile"))
-            console.log("Press [A] to Access!")
+            console.log("Press [B] to Access!")
         }
         console.log(" ")
         console.log("COMMANDS")
         console.log("----------------")
         console.log(Command_List)
-        console.log("Press [MENU] to Access!")
+        console.log("Press [A] to Access!")
     } else {
         console.log(" ")
         console.log("Error 000 - No Commands")
@@ -181,43 +204,6 @@ function Version () {
     console.log(" ")
     console.log("Juno > ____")
 }
-controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
-    spriteutils.setConsoleOverlay(false)
-    blockSettings.writeString("DirectorySearch", game.askForString("Insert Command"))
-    if (blockSettings.exists(blockSettings.readString("DirectorySearch"))) {
-        spriteutils.setConsoleOverlay(true)
-        console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
-        console.log(" ")
-        console.log("\"" + blockSettings.readString("DirectorySearch") + "\"")
-        if (blockSettings.readString("DirectorySearch") == "Directory") {
-            Directory()
-        } else if (blockSettings.readString("DirectorySearch") == "Version") {
-            Version()
-        } else if (blockSettings.readString("DirectorySearch") == "VersionLog") {
-            VersionLog()
-        } else if (blockSettings.readString("DirectorySearch") == "Files") {
-            Files()
-        } else if (blockSettings.readString("DirectorySearch") == "Registry") {
-            Registry()
-        } else if (blockSettings.readString("DirectorySearch") == "Help") {
-            Help()
-        } else if (blockSettings.readString("DirectorySearch") == "Clear") {
-            Clear()
-        }
-    } else {
-        spriteutils.setConsoleOverlay(true)
-        console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
-        console.log(" ")
-        console.log("Error 001 - No Settings")
-        console.log("found with name \"" + blockSettings.readString("DirectorySearch") + "\"")
-        pause(100)
-        console.log(" ")
-        console.log("Available Commands:")
-        console.log(Command_List)
-        console.log(" ")
-        console.log("Juno > ____")
-    }
-})
 function Directory () {
     console.log(" ")
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
@@ -270,6 +256,29 @@ function Registry_View () {
         }
     }
 }
+function Registry_Edit () {
+    blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
+    spriteutils.setConsoleOverlay(false)
+    Temporary_File_Name = game.askForString("Insert File Name")
+    if (blockSettings.exists(Temporary_File_Name)) {
+        OldTempFileData = blockSettings.readString(Temporary_File_Name)
+        Temporary_File_Data = game.askForString("Insert NEW File Data")
+        spriteutils.setConsoleOverlay(true)
+        console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
+        console.log(" ")
+        console.log("\"" + Temporary_File_Name + "\"")
+        console.log("" + OldTempFileData + " ---> " + Temporary_File_Data)
+        blockSettings.writeString(Temporary_File_Name, Temporary_File_Data)
+    } else {
+        spriteutils.setConsoleOverlay(true)
+        console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
+        console.log(" ")
+        console.log("File with name \"" + blockSettings.readString(Temporary_File_Name) + "\"")
+        console.log("Not Found.")
+        console.log(" ")
+        console.log("Juno > ____")
+    }
+}
 function VersionLog () {
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     console.log(" ")
@@ -316,6 +325,7 @@ function Registry_Delete () {
         console.log("Juno > ____")
     }
 }
+let OldTempFileData = ""
 let RegistryView001BooleanCreate = ""
 let SystemReinstallVerificationBoolean = false
 let Temporary_File_Data = ""
