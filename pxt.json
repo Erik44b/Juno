@@ -1,5 +1,5 @@
 {
-    "name": "Juno Kernel version 0025",
+    "name": "Juno Kernel version 0027",
     "version": "0.3.3",
     "description": "",
     "dependencies": {
@@ -29,5 +29,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
