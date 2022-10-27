@@ -1,4 +1,4 @@
-function Clear() {
+function Clear () {
     spriteutils.setConsoleOverlay(false)
     pause(100)
     spriteutils.setConsoleOverlay(true)
@@ -43,7 +43,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
         Clear()
     }
 })
-function Registry_Rename() {
+function Registry_Rename () {
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     spriteutils.setConsoleOverlay(false)
     OldTempFileName = game.askForString("Insert Old File Name")
@@ -66,7 +66,7 @@ function Registry_Rename() {
         console.log("Juno > ____")
     }
 }
-function Registry() {
+function Registry () {
     console.log(" ")
     console.log("Files:")
     Setting__Command_List()
@@ -128,7 +128,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         console.log("Juno > ____")
     }
 })
-function Setting__Command_List() {
+function Setting__Command_List () {
     console.log("Files")
     pause(10)
     console.log("Directory")
@@ -144,7 +144,7 @@ function Setting__Command_List() {
     console.log(" ")
     console.log("Juno > ____")
 }
-function Registry_Add() {
+function Registry_Add () {
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     Temporary_File_Name = game.askForString("Insert File Name")
     Temporary_File_Data = game.askForString("Insert File Data")
@@ -152,9 +152,9 @@ function Registry_Add() {
     spriteutils.setConsoleOverlay(true)
     console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
     console.log(" ")
-    console.log("\"" + Temporary_File_Name + "\"" + "" + "has Been Created.")
+    console.log("\"" + Temporary_File_Name + "\"" + " " + "has Been Created.")
 }
-function Juno() {
+function Juno () {
     blockSettings.writeNumber("Version", 27)
     blockSettings.writeString("VersionLog", "Version 0027")
     SystemReinstallVerificationBoolean = false
@@ -165,16 +165,16 @@ function Juno() {
     blockSettings.writeString("Registry", "ver0.27.0")
     blockSettings.writeString("Help", "ver0.27.0")
     Command_List = [
-        "Directory",
-        "Version",
-        "VersionLog",
-        "Files",
-        "Registry",
-        "Help"
+    "Directory",
+    "Version",
+    "VersionLog",
+    "Files",
+    "Registry",
+    "Help"
     ]
     Juno_Terminal()
 }
-function Error_Screen2() {
+function Error_Screen2 () {
     spriteutils.setConsoleOverlay(false)
     pause(500)
     scene.setBackgroundColor(2)
@@ -194,7 +194,7 @@ function Error_Screen2() {
         pause(100)
     }
 }
-function Registry001() {
+function Registry001 () {
     spriteutils.setConsoleOverlay(true)
     console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
     console.log(" ")
@@ -206,7 +206,7 @@ function Registry001() {
     console.log(" ")
     console.log("Juno > ____")
 }
-function Help() {
+function Help () {
     spriteutils.setConsoleOverlay(true)
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
@@ -220,7 +220,7 @@ function Help() {
     console.log("to the JunoKernel Repository to ask any")
     console.log("questions / add / remove something")
 }
-function Juno_Terminal() {
+function Juno_Terminal () {
     spriteutils.setConsoleOverlay(true)
     pause(100)
     console.log("Juno Kernel Version " + blockSettings.readNumber("Version"))
@@ -274,7 +274,7 @@ function Juno_Terminal() {
     console.log(" ")
     console.log("Juno > ____")
 }
-function Version() {
+function Version () {
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     console.log(" ")
     console.log("This version is up ")
@@ -282,7 +282,7 @@ function Version() {
     console.log(" ")
     console.log("Juno > ____")
 }
-function Directory() {
+function Directory () {
     console.log(" ")
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     Command_List = [blockSettings.readString("Directory")]
@@ -290,7 +290,7 @@ function Directory() {
     console.log(" ")
     console.log("Juno > ____")
 }
-function Error_Screen() {
+function Error_Screen () {
     spriteutils.setConsoleOverlay(false)
     pause(500)
     scene.setBackgroundColor(2)
@@ -310,7 +310,7 @@ function Error_Screen() {
         pause(100)
     }
 }
-function Files() {
+function Files () {
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     console.log(" ")
     console.log("Files:")
@@ -319,7 +319,7 @@ function Files() {
     console.log(" ")
     console.log("Juno > ____")
 }
-function Registry_View() {
+function Registry_View () {
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     Temporary_File_Name = game.askForString("Insert File Name")
     if (blockSettings.exists(Temporary_File_Name)) {
@@ -354,7 +354,7 @@ function Registry_View() {
         }
     }
 }
-function Registry_Edit() {
+function Registry_Edit () {
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     spriteutils.setConsoleOverlay(false)
     Temporary_File_Name = game.askForString("Insert File Name")
@@ -377,7 +377,7 @@ function Registry_Edit() {
         console.log("Juno > ____")
     }
 }
-function VersionLog() {
+function VersionLog () {
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     console.log(" ")
     console.log("Kernel Update")
@@ -387,7 +387,7 @@ function VersionLog() {
     console.log(" ")
     console.log("Juno > ____")
 }
-function Registry_Delete() {
+function Registry_Delete () {
     blockSettings.writeString("MostRecentFile", blockSettings.readString("DirectorySearch"))
     Temporary_File_Name = game.askForString("Insert File Name")
     blockSettings.remove(Temporary_File_Name)
